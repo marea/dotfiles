@@ -1,0 +1,5 @@
+#!/bin/bash
+
+TARGET=$(rbw ls | dmenu)
+PASSWORD=$(rbw get "$TARGET")
+echo $PASSWORD | xclip -selection clipboard
