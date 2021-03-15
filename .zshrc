@@ -10,7 +10,7 @@ compinit
 eval "$(starship init zsh)"
 
 typeset -U PATH path
-path=("$HOME/.local/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bin" "$path[@]")
+path=("$HOME/.local/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bin" "$HOME/.local/share/gem/ruby/2.7.0/bin" "$path[@]")
 export PATH
 
 export GOPATH="$HOME/.golang"
