@@ -150,7 +150,6 @@ c.session.lazy_restore = True
 c.spellcheck.languages = ['es-ES', 'en-US']
 
 c.statusbar.position = 'bottom'
-c.statusbar.show = 'in-mode'
 
 c.tabs.last_close = 'startpage'
 c.tabs.mousewheel_switching = False
