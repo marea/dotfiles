@@ -16,7 +16,7 @@ xinput set-prop 'SynPS/2 Synaptics TouchPad'\
 ~/.fehbg &
 # udiskie -ant &
 # twmnd &
-# transmission-daemon
+transmission-daemon
 megasync &
 cbatticon &
 picom -b &
