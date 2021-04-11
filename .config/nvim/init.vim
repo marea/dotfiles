@@ -8,6 +8,9 @@ Plug 'ap/vim-css-color'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
 Plug 'rust-lang/rust.vim'
+Plug 'Yggdroot/indentLine'
+Plug 'lukas-reineke/indent-blankline.nvim'
+Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 call plug#end()
 
 colorscheme sayo
@@ -65,3 +68,6 @@ endfunction
 
 "" NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
+
+"" Indent Line
+let g:indentLine_char = '│'
