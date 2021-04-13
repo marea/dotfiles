@@ -1,0 +1,11 @@
+#!/bin/bash
+
+AFIFO=/tmp/xob-audio.fifo
+BFIFO=/tmp/xob-brightness.fifo
+rm $AFIFO
+rm $BFIFO
+mkfifo $AFIFO
+mkfifo $BFIFO
+
+tail -f $AFIFO | xob >/dev/null 2>&1 &
+tail -f $BFIFO | xob -s offset >/dev/null 2>&1 &
