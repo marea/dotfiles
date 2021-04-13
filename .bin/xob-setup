@@ -1,6 +1,6 @@
 #!/bin/bash
 
-pkill -9 xob
+pkill -9 -x xob
 pkill -9 tail
 AFIFO=/tmp/xob-audio.fifo
 BFIFO=/tmp/xob-brightness.fifo
