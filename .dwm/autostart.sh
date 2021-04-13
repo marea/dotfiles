@@ -7,7 +7,6 @@ pkill -9 picom
 pkill -9 pamac-tray
 pkill -9 dwmstatus
 pkill -9 unclutter
-pkill -9 xob
 xrdb ~/.Xresources &
 nm-applet &
 pa-applet &
