@@ -1,0 +1,37 @@
+#!/bin/bash
+
+case $1 in
+  BU)
+    xbacklight -inc 10
+    ;;
+  BD)
+    xbacklight -dec 10
+    ;;
+  AU)
+    pamixer -i 10
+    ;;
+  AD)
+    pamixer -d 10
+    ;;
+  AM)
+    pamixer -t
+    ;;
+  *)
+    ;;
+esac
+
+case $1 in
+  BU | BD)
+    xbacklight >> /tmp/xob-brightness.fifo
+    ;;
+  AU | AD)
+    pamixer --get-volume >> /tmp/xob-audio.fifo
+    ;;
+  AM)
+    VOL=$(pamixer --get-volume)
+    ($(pamixer --get-mute) && echo "${VOL}!" || echo ${VOL}) >> \
+    /tmp/xob-audio.fifo
+    ;;
+  *)
+    ;;
+esac
