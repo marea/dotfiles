@@ -71,3 +71,7 @@ nnoremap <C-n> :NERDTreeToggle<CR>
 
 "" Indent Line
 let g:indentLine_char = '│'
+
+"" Prettier
+let g:prettier#autoformat = 1
+let g:prettier#autoformat_require_pragma = 0
