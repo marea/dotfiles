@@ -1,5 +1,9 @@
 https://nesslabs.com/feed "~Ness Labs"
 
+# Dev.To
+https://dev.to/feed/tag/vim "~Dev.to Vim" Dev.To
+https://dev.to/feed/tag/javascript "~Dev.to Javascript" Dev.To
+
 # Youtube
 https://youtube.com/feeds/videos.xml?channel_id=UCYO_jab_esuFRV4b17AJtAw "~3Blue1Brown" YouTube
 https://youtube.com/feeds/videos.xml?user=Thefearalcarrot "~Adam Millard - The Architect of Games" YouTube
