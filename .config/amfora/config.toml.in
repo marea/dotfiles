@@ -1,10 +1,18 @@
 [a-general]
 home = "gemini://medusae.space/"
+auto_redirect = true
 http = 'link-handler'
 search = "gemini://geminispace.info/search"
 
 [keybindings]
 bind_bottom = ":"
+
+[auth]
+[auth.certs]
+"astrobotany.mozz.us" = "~/.local/share/amfora/astrobotany-cert.pem"
+
+[auth.keys]
+"astrobotany.mozz.us" = "~/.local/share/amfora/astrobotany-key.pem"
 
 [[mediatype-handlers]]
 cmd = ['feh']
