@@ -1,0 +1,26 @@
+shell = "bash -c '{}'"
+
+[[item]]
+file = "~/.config/alacritty/alacritty.yml"
+template = "alacritty"
+
+[[item]]
+file = "~/.Xresources"
+template = "xresources"
+start= "! Start flavours"
+end = "! End flavours"
+hook = "xrdb .Xresources"
+
+[[item]]
+file = "~/.config/zathura/zathurarc"
+template = "zathura"
+subtemplate = "recolor"
+
+[[item]]
+file = "~/.config/nvim/colors/base16.vim"
+template = "vim"
+rewrite = true
+
+[[item]]
+file = "~/.config/qutebrowser/config.py"
+template = "qutebrowser"

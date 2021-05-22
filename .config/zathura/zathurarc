@@ -1,36 +1,36 @@
-# zathurarc with sayo theme colours
+set recolor
+# Start flavours
+# Base16 Rosé Pine
+# Author: Emilia Dunfelt <sayhi@dunfelt.se>
 
-set default-bg			"#2a2a2a"
-set default-fg			"#bebebe"
+set default-bg                  "#191724"
+set default-fg                  "#1f1d2e"
 
-set highlight-color		"#937a6b"
-set highlight-active-color	"#8b8f7e"
+set statusbar-fg                "#6e6a86"
+set statusbar-bg                "#26233a"
 
-set statusbar-bg		"#3a3a3a"
-set statusbar-fg		"#8b8f7e"
+set inputbar-bg                 "#191724"
+set inputbar-fg                 "#c5c3ce"
 
-set index-bg			"#3a3a3a"
-set index-fg			"#bebebe"
-set index-active-bg		"#937f74"
-set index-active-fg		"#bebebe"
+set notification-bg             "#191724"
+set notification-fg             "#c5c3ce"
 
-set inputbar-bg			"#3a3a3a"
-set inputbar-fg			"#aa8f7c"
+set notification-error-bg       "#191724"
+set notification-error-fg       "#e2e1e7"
 
-set recolor-lightcolor		"#2a2a2a"
-set recolor-darkcolor		"#bebebe"
-set recolor			"true"
+set notification-warning-bg     "#191724"
+set notification-warning-fg     "#e2e1e7"
 
-set completion-bg		"#2a2a2a"
-set completion-fg		"#bebebe"
-set completion-group-bg		"#3a3a3a"
-set completion-group-fg		"#bebebe"
-set completion-highlight-bg	"#987a6b"
-set completion-highlight-fg	"#2a2a2a"
+set highlight-color             "#f6c177"
+set highlight-active-color      "#9ccfd8"
 
-set notification-error-bg	"#3a3a3a"
-set notification-error-fg	"#627a8a"
-set notification-warning-bg	"#3a3a3a"
-set notification-warning-fg	"#627a8a"
-set notification-bg		"#3a3a3a"
-set notification-fg		"#8b8f7e"
+set completion-bg               "#1f1d2e"
+set completion-fg               "#9ccfd8"
+
+set completion-highlight-fg     "#c5c3ce"
+set completion-highlight-bg     "#9ccfd8"
+
+set recolor-lightcolor          "#191724"
+set recolor-darkcolor           "#f0f0f3"
+# End Flavours
+

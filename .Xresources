@@ -1,11 +1,57 @@
-!#include "/home/marea/.xcolors/cosme"
-#include "/home/marea/.xcolors/sayo-dark"
-dwm.normbgcolor: clr00
-dwm.normbordercolor: clr00
-dwm.normfgcolor: clr15
-dwm.selbgcolor: clr02
-dwm.selbordercolor: clr02
-dwm.selfgcolor: clr00
+! Start flavours
+! Base16 Rosé Pine
+! Scheme: Emilia Dunfelt <sayhi@dunfelt.se>
+
+#define base00 #191724
+#define base01 #1f1d2e
+#define base02 #26233a
+#define base03 #555169
+#define base04 #6e6a86
+#define base05 #e0def4
+#define base06 #f0f0f3
+#define base07 #c5c3ce
+#define base08 #e2e1e7
+#define base09 #eb6f92
+#define base0A #f6c177
+#define base0B #ebbcba
+#define base0C #31748f
+#define base0D #9ccfd8
+#define base0E #c4a7e7
+#define base0F #e5e5e5
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
+! End flavours
+
+dwm.normbgcolor: base00
+dwm.normbordercolor: base00
+dwm.normfgcolor: base06
+dwm.selbgcolor: base02
+dwm.selbordercolor: base02
+dwm.selfgcolor: base06
 dwm.borderpx: 5
 !dwm.snap:
 dwm.showbar: 1
@@ -14,44 +60,7 @@ dwm.resizehints: 0
 dwm.mfact: 0.55
 
 dmenu.font: GoMono Nerd Font:size=12
-dmenu.background: clr00
-dmenu.foreground: clr07
-dmenu.selbackground: clr02
-dmenu.selforeground: clr00
-
-! special
-*.foreground:   clr07
-*.background:   clr00
-*.cursorColor:  clr07
-
-! black
-*.color0:       clr00
-*.color8:       clr08
-
-! red
-*.color1:       clr01
-*.color9:       clr09
-
-! green
-*.color2:       clr02
-*.color10:      clr10
-
-! yellow
-*.color3:       clr03
-*.color11:      clr11
-
-! blue
-*.color4:       clr04
-*.color12:      clr12
-
-! magenta
-*.color5:       clr05
-*.color13:      clr13
-
-! cyan
-*.color6:       clr06
-*.color14:      clr14
-
-! white
-*.color7:       clr07
-*.color15:      clr15
+dmenu.background: base00
+dmenu.foreground: base07
+dmenu.selbackground: base02
+dmenu.selforeground: base00
