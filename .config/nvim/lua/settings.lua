@@ -1,0 +1,18 @@
+local o = vim.o
+local wo = vim.wo
+local bo = vim.bo
+
+o.termguicolors = true
+o.shortmess = 'atI'
+o.updatetime = 100
+
+wo.number = true
+wo.colorcolumn = '80'
+wo.list = true
+wo.listchars = 'tab:  ,trail:.,extends:>'
+
+bo.tabstop = 2
+bo.shiftwidth = 2
+bo.textwidth = 80
+
+vim.cmd(':colorscheme base16')
