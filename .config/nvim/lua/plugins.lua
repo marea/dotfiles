@@ -43,5 +43,9 @@ map('n', '<A->>', ':BufferMoveNext<CR>', options)
 -- NERDTree
 map('n', '<C-n>', ':NERDTreeToggle<CR>', options)
 
--- Prettier
+-- Indent Line
 vim.g.indentLine_char = '|'
+
+-- Prettier
+vim.cmd("let g:prettier#autoformat = 1")
+vim.cmd("let g:prettier#autoformat_require_pragma = 0")
