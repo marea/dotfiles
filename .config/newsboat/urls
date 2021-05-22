@@ -1,4 +1,13 @@
 https://nesslabs.com/feed "~Ness Labs"
+https://thomasorus.com/feed.xml
+https://100r.co/links/rss.xml
+
+# Comics
+https://backcomic.com/rss.xml Comics
+
+# Devlogs
+https://domwillia.ms/index.xml Devlogs Rust
+https://gamedev.rs/rss.xml Devlogs Rust
 
 # Dev.To
 https://dev.to/feed/tag/vim "~Dev.to Vim" Dev.To
@@ -10,6 +19,7 @@ https://youtube.com/feeds/videos.xml?user=Thefearalcarrot "~Adam Millard - The A
 https://youtube.com/feeds/videos.xml?channel_id=UCSDiMahT5qDCjoWtzruztkw "~ambiguousamphibian" YouTube
 https://youtube.com/feeds/videos.xml?channel_id=UCn8OYopT9e8tng-CGEWzfmw "~Atrocity Guide" YouTube
 https://youtube.com/feeds/videos.xml?user=eaterbc "~Ben Eater" YouTube
+https://youtube.com/feeds/videos.xml?channel_id=UCSf6S_PAhXsqGMTPDiKgdRg "~BettaTech" Youtube
 https://youtube.com/feeds/videos.xml?channel_id=UC0e3QhIYukixgh5VVpKHH9Q "~Code Bullet" YouTube
 https://youtube.com/feeds/videos.xml?channel_id=UClb90NQQcskPUGDIXsQEz5Q "~Dev Ed" YouTube
 https://youtube.com/feeds/videos.xml?channel_id=UCy5znSnfMsDwaLlROnZ7Qbg "~Dot CSV" YouTube
