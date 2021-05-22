@@ -3,7 +3,6 @@ Plug 'tpope/vim-sensible'
 Plug 'preservim/nerdtree'
 Plug 'preservim/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
-Plug 'bagrat/vim-buffet'
 Plug 'ap/vim-css-color'
 Plug 'mattn/emmet-vim'
 Plug 'Raimondi/delimitMate'
@@ -13,9 +12,11 @@ Plug 'lukas-reineke/indent-blankline.nvim'
 Plug 'prettier/vim-prettier', { 'do': 'npm install' }
 Plug 'neovim/nvim-lspconfig'
 Plug 'fatih/vim-go', { 'do': ':GoUpdateBinaries' }
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'romgrk/barbar.nvim'
 call plug#end()
 
-colorscheme sayo
+colorscheme base16
 set number
 set colorcolumn=80
 set termguicolors
@@ -48,27 +49,17 @@ imap kj <Esc>
 
 
 " Plugin Configuration
-"" vim-buffet
-noremap <Tab> :bn<CR>
-noremap <S-Tab> :bp<CR>
-noremap <Leader><Tab> :Bw<CR>
-noremap <Leader><S-Tab> :Bw!<CR>
-noremap <C-t> :tabnew split<CR>
-let g:buffet_powerline_separators = 1
-let g:buffet_tab_icon = "\uf00a"
-let g:buffet_left_trunc_icon = "\uf0a8"
-let g:buffet_right_trunc_icon = "\uf0a9"
-
-function! g:BuffetSetCustomColors()
-  hi! BuffetCurrentBuffer    gui=NONE guibg=#ffafd7 guifg=#585858
-  hi! BuffetActiveBuffer     gui=NONE guibg=#fff0ff guifg=#303030
-  hi! BuffetBuffer           gui=NONE guibg=#303030 guifg=#f0f0ff
-  hi! BuffetModCurrentBuffer gui=NONE guibg=#ffafd7 guifg=#303030
-  hi! BuffetModActiveBuffer  gui=NONE guibg=#ffb86c guifg=#303030
-  hi! BuffetModBuffer        gui=NONE guibg=#ffaf87 guifg=#303030
-  hi! BuffetTrunc            gui=NONE guibg=#bd93f9 guifg=#303030
-  hi! BuffetTab              gui=NONE guibg=#ffd7ff guifg=#303030
-endfunction
+"" Barbar.nvim
+""" Magic buffer-picking mode
+nnoremap <silent> <C-s>    :BufferPick<CR>
+""" Close buffer
+nnoremap <silent>    <A-c> :BufferClose<CR>
+""" Move to previous/next
+nnoremap <silent>    <A-,> :BufferPrevious<CR>
+nnoremap <silent>    <A-.> :BufferNext<CR>
+""" Re-order to previous/next
+nnoremap <silent>    <A-<> :BufferMovePrevious<CR>
+nnoremap <silent>    <A->> :BufferMoveNext<CR>
 
 "" NERDTree
 nnoremap <C-n> :NERDTreeToggle<CR>
