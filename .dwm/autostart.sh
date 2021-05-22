@@ -22,6 +22,6 @@ cbatticon &
 picom -b &
 unclutter -idle 3 &
 pamac-tray &
-videowall ~/.wallpaper.mp4 &
+# videowall ~/.wallpaper.mp4 &
 dwmstatus &
 xob-setup &
