@@ -40,6 +40,12 @@ start= "## Start flavours"
 end = "## End flavours"
 
 [[item]]
+file = "~/.browser/style.css"
+template = "startpage"
+start= "/* Start flavours */"
+end = "/* End flavours */"
+
+[[item]]
 file = "~/.themes/FlatColor/colors2"
 template = "gtk-flatcolor"
 subtemplate = "gtk-2"
