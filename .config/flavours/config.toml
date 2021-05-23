@@ -9,7 +9,7 @@ file = "~/.Xresources"
 template = "xresources"
 start= "! Start flavours"
 end = "! End flavours"
-hook = "xrdb .Xresources"
+hook = "xrdb ~/.Xresources"
 
 [[item]]
 file = "~/.config/zathura/zathurarc"
@@ -24,3 +24,29 @@ rewrite = true
 [[item]]
 file = "~/.config/qutebrowser/config.py"
 template = "qutebrowser"
+
+[[item]]
+file = "~/.config/amfora/config.toml"
+template = "amfora"
+
+[[item]]
+file = "~/.config/xob/styles.cfg"
+template = "xob"
+
+[[item]]
+file = "~/.config/xob/styles.cfg"
+template = "xob"
+start= "## Start flavours"
+end = "## End flavours"
+
+[[item]]
+file = "~/.themes/FlatColor/colors2"
+template = "gtk-flatcolor"
+subtemplate = "gtk-2"
+rewrite = true
+
+[[item]]
+file = "~/.themes/FlatColor/colors3"
+template = "gtk-flatcolor"
+subtemplate = "gtk-3"
+rewrite = true

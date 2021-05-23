@@ -1,0 +1,65 @@
+[a-general]
+home = "gemini://medusae.space/"
+auto_redirect = true
+http = 'link-handler'
+search = "gemini://geminispace.info/search"
+
+[keybindings]
+bind_bottom = ":"
+
+[auth]
+[auth.certs]
+"astrobotany.mozz.us" = "~/.local/share/amfora/astrobotany-cert.pem"
+
+[auth.keys]
+"astrobotany.mozz.us" = "~/.local/share/amfora/astrobotany-key.pem"
+
+[[mediatype-handlers]]
+cmd = ['feh']
+types = ["image"]
+no_prompt = true
+
+# Start flavours
+# Base16 Rosé Pine - amfora color config
+# Emilia Dunfelt <sayhi@dunfelt.se>
+
+[theme]
+bg = "#191724"
+fg = "#e0def4"
+
+bottombar_label = "#c4a7e7"
+bottombar_text = "#e0def4"
+bottombar_bg = "#1f1d2e"
+
+tab_num = "#26233a"
+tab_divider = "#6e6a86"
+
+amfora_link = "#ebbcba"
+foreign_link = "#555169"
+link_number = "#555169"
+
+btn_bg = "#1f1d2e"
+btn_text = "#e0def4"
+
+input_modal_bg = "#1f1d2e"
+input_modal_text = "#e0def4"
+input_modal_field_bg = "#191724"
+input_modal_field_text = "#e0def4"
+info_modal_bg = "#1f1d2e"
+info_modal_text = "#e0def4"
+error_modal_bg = "#1f1d2e"
+error_modal_text = "#e5e5e5"
+yesno_modal_bg = "#1f1d2e"
+yesno_modal_text = "#e0def4"
+tofu_modal_bg = "#1f1d2e"
+tofu_modal_text = "#e0def4"
+subscription_modal_bg = "#1f1d2e"
+subscription_modal_text = "#e0def4"
+
+hdg_1 = "#eb6f92"
+hdg_2 = "#f6c177"
+hdg_3 = "#9ccfd8"
+regular_text = "#e0def4"
+preformatted_text = "#31748f"
+list_text = "#e0def4"
+# End Flavours
