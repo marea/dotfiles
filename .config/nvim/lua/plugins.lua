@@ -1,6 +1,6 @@
+require('plugins-keybindings')
 local execute = vim.api.nvim_command
 local fn = vim.fn
-local map = vim.api.nvim_set_keymap
 
 local install_path = fn.stdpath('data')..'/site/pack/packer/opt/packer.nvim'
 
@@ -13,39 +13,51 @@ vim.cmd [[packadd packer.nvim]]
 
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'
-  use 'tpope/vim-sensible'
-  use 'preservim/nerdtree'
-  use 'preservim/nerdcommenter'
-  use 'ryanoasis/vim-devicons'
-  use 'ap/vim-css-color'
-  use 'mattn/emmet-vim'
-  use 'Raimondi/delimitMate'
-  use 'rust-lang/rust.vim'
-  use 'Yggdroot/indentLine'
-  use 'lukas-reineke/indent-blankline.nvim'
-  use {'prettier/vim-prettier', run = 'npm install' }
-  use 'neovim/nvim-lspconfig'
-  use {'fatih/vim-go', run = ':GoUpdateBinaries' }
-  use 'kyazdani42/nvim-web-devicons'
-  use 'romgrk/barbar.nvim'
-  use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+	use 'kyazdani42/nvim-web-devicons'
+	use {
+		'kyazdani42/nvim-tree.lua',
+		config = function()
+			vim.cmd("let g:nvim_tree_quit_on_open = 1")
+			vim.cmd("let g:nvim_tree_hide_dotfiles = 1")
+			vim.cmd("let g:nvim_tree_highlight_opened_files = 1")
+		end
+	}
+	use {
+		'norcalli/nvim-colorizer.lua',
+		config = function()
+			require('colorizer').setup()
+		end
+	}
+	use 'romgrk/barbar.nvim'
+	use 'mattn/emmet-vim'
+	use {
+		'windwp/nvim-autopairs',
+		config = function()
+			require('nvim-autopairs').setup()
+		end
+	}
+	use 'rust-lang/rust.vim'
+	use {
+		'prettier/vim-prettier',
+		config = function()
+			vim.cmd("let g:prettier#autoformat = 1")
+			vim.cmd("let g:prettier#autoformat_require_pragma = 0")
+		end
+	}
+	use 'neovim/nvim-lspconfig'
+	use {
+		'nvim-treesitter/nvim-treesitter',
+		run = ':TSUpdate'
+	}
+	use 'fatih/vim-go'
+	--use {
+	--	'ray-x/go.nvim',
+	--	config = function()
+	--		require('go').setup()
+	--	end
+	--}
+	use {
+    'NTBBloodbath/rest.nvim',
+    requires = { 'nvim-lua/plenary.nvim' }
+	}
 end)
-
--- Barbar.nvim
-options = { noremap = true, silent = true }
-map('n', '<C-s>', ':BufferPick<CR>', options)
-map('n', '<A-c>', ':BufferClose<CR>', options)
-map('n', '<A-,>', ':BufferPrevious<CR>', options)
-map('n', '<A-.>', ':BufferNext<CR>', options)
-map('n', '<A-<>', ':BufferMovePrevious<CR>', options)
-map('n', '<A->>', ':BufferMoveNext<CR>', options)
-
--- NERDTree
-map('n', '<C-n>', ':NERDTreeToggle<CR>', options)
-
--- Indent Line
-vim.g.indentLine_char = '|'
-
--- Prettier
-vim.cmd("let g:prettier#autoformat = 1")
-vim.cmd("let g:prettier#autoformat_require_pragma = 0")
