@@ -10,6 +10,7 @@ wo.number = true
 wo.colorcolumn = '80'
 wo.list = true
 wo.listchars = 'tab:  ,trail:.,extends:>'
+wo.cursorline = true
 
 bo.tabstop = 2
 bo.shiftwidth = 2
