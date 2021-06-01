@@ -60,4 +60,10 @@ require('packer').startup(function()
     'NTBBloodbath/rest.nvim',
     requires = { 'nvim-lua/plenary.nvim' }
 	}
+	use {
+		'windwp/nvim-ts-autotag',
+		config = function()
+			require('nvim-ts-autotag').setup()
+		end
+	}
 end)
