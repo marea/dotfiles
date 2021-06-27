@@ -1,0 +1,8 @@
+#!/bin/bash
+
+WALLPAPER_FILE=$HOME/.wallpaper.png
+SOURCE_URL=https://source.unsplash.com/random/
+SIZE=1366x768
+
+wget -q -O $WALLPAPER_FILE ${SOURCE_URL}${SIZE}
+feh --bg-fill $WALLPAPER_FILE
