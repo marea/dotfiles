@@ -13,7 +13,10 @@ wo.listchars = 'tab:  ,trail:.,extends:>'
 wo.cursorline = true
 
 bo.tabstop = 2
+o.tabstop = 2
 bo.shiftwidth = 2
+o.shiftwidth = 2
 bo.textwidth = 80
+o.textwidth = 80
 
 vim.cmd(':colorscheme base16')
