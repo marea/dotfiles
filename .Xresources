@@ -1,23 +1,23 @@
 ! Start flavours
-! Base16 Rosé Pine
-! Scheme: Emilia Dunfelt <sayhi@dunfelt.se>
+! Base16 Generated
+! Scheme: Flavours
 
-#define base00 #191724
-#define base01 #1f1d2e
-#define base02 #26233a
-#define base03 #555169
-#define base04 #6e6a86
-#define base05 #e0def4
-#define base06 #f0f0f3
-#define base07 #c5c3ce
-#define base08 #e2e1e7
-#define base09 #eb6f92
-#define base0A #f6c177
-#define base0B #ebbcba
-#define base0C #31748f
-#define base0D #9ccfd8
-#define base0E #c4a7e7
-#define base0F #e5e5e5
+#define base00 #1a2439
+#define base01 #3e485a
+#define base02 #636c7b
+#define base03 #88909c
+#define base04 #acb3bd
+#define base05 #d1d7de
+#define base06 #d8dde3
+#define base07 #dee3e8
+#define base08 #787878
+#define base09 #5d7aa0
+#define base0A #447cae
+#define base0B #5d83c4
+#define base0C #5676c2
+#define base0D #6377af
+#define base0E #4d8bbc
+#define base0F #6e7892
 
 *foreground:   base05
 #ifdef background_opacity

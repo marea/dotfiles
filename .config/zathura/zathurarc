@@ -1,36 +1,36 @@
 set recolor
 # Start flavours
-# Base16 Rosé Pine
-# Author: Emilia Dunfelt <sayhi@dunfelt.se>
+# Base16 Generated
+# Author: Flavours
 
-set default-bg                  "#191724"
-set default-fg                  "#1f1d2e"
+set default-bg                  "#1a2439"
+set default-fg                  "#3e485a"
 
-set statusbar-fg                "#6e6a86"
-set statusbar-bg                "#26233a"
+set statusbar-fg                "#acb3bd"
+set statusbar-bg                "#636c7b"
 
-set inputbar-bg                 "#191724"
-set inputbar-fg                 "#c5c3ce"
+set inputbar-bg                 "#1a2439"
+set inputbar-fg                 "#dee3e8"
 
-set notification-bg             "#191724"
-set notification-fg             "#c5c3ce"
+set notification-bg             "#1a2439"
+set notification-fg             "#dee3e8"
 
-set notification-error-bg       "#191724"
-set notification-error-fg       "#e2e1e7"
+set notification-error-bg       "#1a2439"
+set notification-error-fg       "#787878"
 
-set notification-warning-bg     "#191724"
-set notification-warning-fg     "#e2e1e7"
+set notification-warning-bg     "#1a2439"
+set notification-warning-fg     "#787878"
 
-set highlight-color             "#f6c177"
-set highlight-active-color      "#9ccfd8"
+set highlight-color             "#447cae"
+set highlight-active-color      "#6377af"
 
-set completion-bg               "#1f1d2e"
-set completion-fg               "#9ccfd8"
+set completion-bg               "#3e485a"
+set completion-fg               "#6377af"
 
-set completion-highlight-fg     "#c5c3ce"
-set completion-highlight-bg     "#9ccfd8"
+set completion-highlight-fg     "#dee3e8"
+set completion-highlight-bg     "#6377af"
 
-set recolor-lightcolor          "#191724"
-set recolor-darkcolor           "#f0f0f3"
+set recolor-lightcolor          "#1a2439"
+set recolor-darkcolor           "#d8dde3"
 # End Flavours
 

@@ -8,24 +8,24 @@ c.auto_save.session = True
 # Start flavours
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Base16 qutebrowser template by theova
-# Rosé Pine scheme by Emilia Dunfelt <sayhi@dunfelt.se>
+# Generated scheme by Flavours
 
-base00 = "#191724"
-base01 = "#1f1d2e"
-base02 = "#26233a"
-base03 = "#555169"
-base04 = "#6e6a86"
-base05 = "#e0def4"
-base06 = "#f0f0f3"
-base07 = "#c5c3ce"
-base08 = "#e2e1e7"
-base09 = "#eb6f92"
-base0A = "#f6c177"
-base0B = "#ebbcba"
-base0C = "#31748f"
-base0D = "#9ccfd8"
-base0E = "#c4a7e7"
-base0F = "#e5e5e5"
+base00 = "#1a2439"
+base01 = "#3e485a"
+base02 = "#636c7b"
+base03 = "#88909c"
+base04 = "#acb3bd"
+base05 = "#d1d7de"
+base06 = "#d8dde3"
+base07 = "#dee3e8"
+base08 = "#787878"
+base09 = "#5d7aa0"
+base0A = "#447cae"
+base0B = "#5d83c4"
+base0C = "#5676c2"
+base0D = "#6377af"
+base0E = "#4d8bbc"
+base0F = "#6e7892"
 
 # set qutebrowser colors
 
@@ -34,7 +34,7 @@ base0F = "#e5e5e5"
 c.colors.completion.fg = base05
 
 # Background color of the completion widget for odd rows.
-c.colors.completion.odd.bg = base00
+c.colors.completion.odd.bg = base01
 
 # Background color of the completion widget for even rows.
 c.colors.completion.even.bg = base00
@@ -256,7 +256,7 @@ c.colors.tabs.indicator.error = base08
 c.colors.tabs.odd.fg = base05
 
 # Background color of unselected odd tabs.
-c.colors.tabs.odd.bg = base00
+c.colors.tabs.odd.bg = base01
 
 # Foreground color of unselected even tabs.
 c.colors.tabs.even.fg = base05

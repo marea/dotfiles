@@ -1,3 +1,8 @@
+window:
+  padding:
+    x: 10
+    y: 10
+
 font:
   normal:
     family: GoMono Nerd Font Mono
@@ -13,7 +18,7 @@ font:
     style: Bold Italic
   size: 8.0
 
-background_opacity: 0.8
+background_opacity: 0.5
 
 bell:
   animation: EaseOut
@@ -23,43 +28,41 @@ bell:
 key_bindings:
   - { key: Return, mods: Control|Shift, action: SpawnNewInstance }
 
-
 # Start flavours
-# Base16 Rosé Pine - alacritty color config
-# Emilia Dunfelt <sayhi@dunfelt.se>
+# Base16 Generated - alacritty color config
+# Flavours
 colors:
   # Default colors
   primary:
-    background: '0x191724'
-    foreground: '0xe0def4'
+    background: '0x1a2439'
+    foreground: '0xd1d7de'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x191724'
-    cursor: '0xe0def4'
+    text: '0x1a2439'
+    cursor: '0xd1d7de'
 
   # Normal colors
   normal:
-    black:   '0x191724'
-    red:     '0xe2e1e7'
-    green:   '0xebbcba'
-    yellow:  '0xf6c177'
-    blue:    '0x9ccfd8'
-    magenta: '0xc4a7e7'
-    cyan:    '0x31748f'
-    white:   '0xe0def4'
+    black:   '0x1a2439'
+    red:     '0x787878'
+    green:   '0x5d83c4'
+    yellow:  '0x447cae'
+    blue:    '0x6377af'
+    magenta: '0x4d8bbc'
+    cyan:    '0x5676c2'
+    white:   '0xd1d7de'
 
   # Bright colors
   bright:
-    black:   '0x555169'
-    red:     '0xeb6f92'
-    green:   '0x1f1d2e'
-    yellow:  '0x26233a'
-    blue:    '0x6e6a86'
-    magenta: '0xf0f0f3'
-    cyan:    '0xe5e5e5'
-    white:   '0xc5c3ce'
+    black:   '0x88909c'
+    red:     '0x5d7aa0'
+    green:   '0x3e485a'
+    yellow:  '0x636c7b'
+    blue:    '0xacb3bd'
+    magenta: '0xd8dde3'
+    cyan:    '0x6e7892'
+    white:   '0xdee3e8'
 
 draw_bold_text_with_bright_colors: false
 # End flavours
-
