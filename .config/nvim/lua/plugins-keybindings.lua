@@ -13,4 +13,4 @@ map('n', '<A-<>', ':BufferMovePrevious<CR>', options)
 map('n', '<A->>', ':BufferMoveNext<CR>', options)
 
 -- rest.nvim
-map('n', '<C-r>', '<Plug>RestNvim', {})
+--map('n', '<C-r>', '<Plug>RestNvim', {})
