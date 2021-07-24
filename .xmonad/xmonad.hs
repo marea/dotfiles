@@ -13,6 +13,7 @@ import XMonad.Util.Cursor
 import XMonad.Util.Run
 import XMonad.Util.SpawnOnce
 import XMonad.Hooks.EwmhDesktops (ewmh)
+import XMonad.Hooks.InsertPosition
 import MyColors
 
 import qualified XMonad.StackSet as W
@@ -97,7 +98,7 @@ myLayout = avoidStruts(
 
 ------------------------------------------------------------------------
 -- Window rules:
-myManageHook = composeAll
+myManageHook = insertPosition Below Older <+> composeAll
     [ resource  =? "desktop_window" --> doIgnore ]
 
 ------------------------------------------------------------------------
