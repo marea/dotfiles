@@ -32,7 +32,7 @@ myFocusedBorderColor = myColorFocus
 myDmenuFont = "GoMono Nerd Font Mono:pixelsize=17"
 myDmenuCommand = "dmenu_run -b -fn '" ++ myDmenuFont ++ "' -nb '" ++
   myColorBorder ++ "' -nf '" ++ myColorFocus ++ "' -sb '" ++ myColorFocus ++
-	"' -sf '" ++ myColorBorder ++ "' -h 25"
+  "' -sf '" ++ myColorBorder ++ "' -h 25"
 
 ------------------------------------------------------------------------
 -- Key Bindings:
@@ -113,6 +113,11 @@ myLogHook = return ()
 myStartupHook = do
   spawnOnce "~/.fehbg &"
   spawnOnce "picom &"
+  spawnOnce "megasync &"
+  spawnOnce "nm-applet &"
+  spawnOnce "pa-applet &"
+  spawnOnce "setxkbmap -option compose:ralt &"
+  spawnOnce "unclutter -idle 3"
   setDefaultCursor xC_left_ptr
 
 ------------------------------------------------------------------------
