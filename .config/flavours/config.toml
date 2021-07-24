@@ -6,6 +6,10 @@ template = "xmonad"
 rewrite = true
 
 [[item]]
+file = "~/.config/polybar/config"
+template = "polybar"
+
+[[item]]
 file = "~/.config/alacritty/alacritty.yml"
 template = "alacritty"
 
