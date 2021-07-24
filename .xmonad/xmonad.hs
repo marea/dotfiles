@@ -12,6 +12,7 @@ import XMonad.Layout.Spacing
 import XMonad.Util.Cursor
 import XMonad.Util.Run
 import XMonad.Util.SpawnOnce
+import XMonad.Hooks.EwmhDesktops (ewmh)
 import MyColors
 
 import qualified XMonad.StackSet as W
@@ -28,10 +29,10 @@ myFocusedBorderColor = myColorFocus
 
 -- dmenu:
 -- "-fn", dmenufont, "-nb", normbgcolor, "-nf", normfgcolor, "-sb", selbordercolor, "-sf", selfgcolor
-myDmenuFont = "GoMono Nerd Font Mono:pixelsize=12"
+myDmenuFont = "GoMono Nerd Font Mono:pixelsize=17"
 myDmenuCommand = "dmenu_run -b -fn '" ++ myDmenuFont ++ "' -nb '" ++
   myColorBorder ++ "' -nf '" ++ myColorFocus ++ "' -sb '" ++ myColorFocus ++
-	"' -sf '" ++ myColorBorder ++ "'"
+	"' -sf '" ++ myColorBorder ++ "' -h 25"
 
 ------------------------------------------------------------------------
 -- Key Bindings:
@@ -117,8 +118,7 @@ myStartupHook = do
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
 main = do
-  xmproc <- spawnPipe "xmobar -x 0 ~/.config/xmobar/xmobar.config"
-  xmonad $ docks defaults
+  xmonad . docks . ewmh $ defaults
 
 defaults = def {
         terminal           = myTerminal,
