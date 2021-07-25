@@ -1,6 +1,11 @@
 shell = "bash -c '{}'"
 
 [[item]]
+file = "~/.doom.d/themes/base16-theme.el"
+template = "emacs"
+rewrite = true
+
+[[item]]
 file = "~/.xmonad/lib/MyColors.hs"
 template = "xmonad"
 rewrite = true
