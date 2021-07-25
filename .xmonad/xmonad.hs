@@ -98,7 +98,7 @@ myLayout = avoidStruts(
 
 ------------------------------------------------------------------------
 -- Window rules:
-myManageHook = insertPosition Below Older <+> composeAll
+myManageHook = insertPosition Below Newer <+> composeAll
     [ resource  =? "desktop_window" --> doIgnore ]
 
 ------------------------------------------------------------------------
