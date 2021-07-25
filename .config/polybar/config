@@ -21,6 +21,7 @@ base0F = 6e7892
 [bar/default]
 background = ${colors.base00}
 foreground = ${colors.base07}
+line-size = 2
 
 bottom = true
 fixed-center = true
@@ -28,10 +29,25 @@ font-0 = GoMono Nerd Font Mono:pixelsize=20:antialias=true:hinting=true;4
 font-1 = GoMono Nerd Font:pixelsize=12:antialias=true:hinting=true;3
 padding-right = 1
 tray-position = right
+module-margin-right = 1
 
 modules-left = ewmh
-modules-center = xwindow
-modules-right = xbacklight date
+modules-center = polywins
+modules-right = updates-pacman-aurhelper xbacklight date
+
+[module/polywins]
+type = custom/script
+exec = ~/.config/polybar/polywins.sh 2>/dev/null
+format = <label>
+label = %output%
+label-padding = 1
+label-font = 2
+tail = true
+
+[module/updates-pacman-aurhelper]
+type = custom/script
+exec = ~/.config/polybar/updates-pacman-aurhelper.sh
+interval = 600
 
 
 [module/ewmh]
