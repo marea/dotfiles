@@ -14,6 +14,7 @@ path=("$HOME/.local/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bi
 export PATH
 
 export GOPATH="$HOME/.golang"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
 alias ls='exa'
 alias la='exa -a'
