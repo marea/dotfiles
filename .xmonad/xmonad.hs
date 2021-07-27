@@ -8,6 +8,7 @@ import XMonad.Hooks.ManageDocks
 import XMonad.Layout.Gaps
 import XMonad.Layout.NoBorders
 import XMonad.Layout.PerWorkspace
+import XMonad.Layout.ResizableTile
 import XMonad.Layout.Spacing
 import XMonad.Util.Cursor
 import XMonad.Util.Run
@@ -57,6 +58,8 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_t     ), withFocused $ windows . W.sink)
     , ((modm              , xK_comma ), sendMessage (IncMasterN 1))
     , ((modm              , xK_period), sendMessage (IncMasterN (-1)))
+    , ((modm .|. controlMask .|. shiftMask,               xK_j), sendMessage MirrorShrink)
+    , ((modm .|. controlMask .|. shiftMask,               xK_k), sendMessage MirrorExpand)
 
     , ((modm              , xK_b     ), sendMessage ToggleStruts)
     , ((modm,               xK_n     ), refresh)
@@ -89,9 +92,10 @@ myLayout = avoidStruts(
   onWorkspace "1" (noBorders Full) $ (
     (spacingRaw False (Border gapSize 0 gapSize 0) True
       (Border 0 gapSize 0 gapSize) True $ tiled
-      ||| Mirror tiled) ||| noBorders Full ))
+      ||| Mirror tiled  ||| rtiled) ||| noBorders Full ))
   where
      tiled   = Tall nmaster delta ratio
+     rtiled  = ResizableTall nmaster delta ratio []
      nmaster = 1
      ratio   = 1/2
      delta   = 3/100
