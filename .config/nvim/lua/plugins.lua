@@ -13,6 +13,7 @@ vim.cmd [[packadd packer.nvim]]
 
 require('packer').startup(function()
   use 'wbthomason/packer.nvim'
+  use 'duggiefresh/vim-easydir'
 	use 'kyazdani42/nvim-web-devicons'
 	use {
 		'kyazdani42/nvim-tree.lua',
