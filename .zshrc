@@ -21,3 +21,6 @@ alias la='exa -a'
 alias q='exit'
 alias cat='bat'
 alias dof='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+
+source /usr/share/fzf/key-bindings.zsh
+source /usr/share/fzf/completion.zsh
