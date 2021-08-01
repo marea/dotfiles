@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd ~/Documents/Notes
+
+main() {
+	selected=`fd -t f | fzf -i --preview='cat {}' --print-query | tail -n 1`
+	if [ -n "$selected" ]; then
+		vim $selected
+		main
+	fi
+}
+
+main
