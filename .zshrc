@@ -21,6 +21,13 @@ alias la='exa -a'
 alias q='exit'
 alias cat='bat'
 alias dof='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
+alias grabc='grabc | xclip -selection clipboard'
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
+
+# color for less and man 
+export MANPAGER='less -s -M +Gg'
+export LESS="--RAW-CONTROL-CHARS"
+lesscolors=$HOME/.bin/.LESS_TERMCAP
+[[ -f $lesscolors ]] && . $lesscolors
