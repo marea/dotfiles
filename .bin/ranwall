@@ -1,6 +1,6 @@
 #!/bin/bash
 
-WALLPAPER_FILE=$HOME/.wallpaper.png
+WALLPAPER_FILE=$HOME/.wallpaper.jpg
 SOURCE_URL=https://source.unsplash.com/random/
 SIZE=1366x768
 
