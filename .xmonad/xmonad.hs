@@ -123,7 +123,7 @@ myStartupHook = do
   spawnOnce "pa-applet &"
   spawnOnce "setxkbmap -option compose:ralt &"
   spawnOnce "unclutter -idle 3"
-  spawnOnce "polybar default && xdo lower -N Polybar &"
+  spawnOnce "polybar -r default && xdo lower -N Polybar &"
   setDefaultCursor xC_left_ptr
 
 ------------------------------------------------------------------------
