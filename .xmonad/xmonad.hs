@@ -4,7 +4,10 @@ import Data.Monoid
 import System.Exit
 import XMonad
 import XMonad.Actions.FloatSnap
+import XMonad.Hooks.EwmhDesktops (ewmh)
+import XMonad.Hooks.InsertPosition
 import XMonad.Hooks.ManageDocks
+import XMonad.Hooks.ManageHelpers (isFullscreen, doFullFloat)
 import XMonad.Layout.Gaps
 import XMonad.Layout.NoBorders
 import XMonad.Layout.PerWorkspace
@@ -13,8 +16,6 @@ import XMonad.Layout.Spacing
 import XMonad.Util.Cursor
 import XMonad.Util.Run
 import XMonad.Util.SpawnOnce
-import XMonad.Hooks.EwmhDesktops (ewmh)
-import XMonad.Hooks.InsertPosition
 import MyColors
 
 import qualified XMonad.StackSet as W
@@ -93,10 +94,9 @@ gapSize=15
 myLayout = avoidStruts(
   onWorkspace "1" (noBorders Full) $ (
     (spacingRaw False (Border gapSize 0 gapSize 0) True
-      (Border 0 gapSize 0 gapSize) True $ tiled
-      ||| Mirror tiled  ||| rtiled) ||| noBorders Full ))
+      (Border 0 gapSize 0 gapSize) True $ rtiled
+      ||| Mirror rtiled) ||| noBorders Full ))
   where
-     tiled   = Tall nmaster delta ratio
      rtiled  = ResizableTall nmaster delta ratio []
      nmaster = 1
      ratio   = 1/2
@@ -105,7 +105,19 @@ myLayout = avoidStruts(
 ------------------------------------------------------------------------
 -- Window rules:
 myManageHook = insertPosition Below Newer <+> composeAll
-    [ resource  =? "desktop_window" --> doIgnore ]
+    [ resource  =? "desktop_window" --> doIgnore
+		 , className =? "confirm"         --> doFloat
+     , className =? "file_progress"   --> doFloat
+     , className =? "dialog"          --> doFloat
+     , className =? "download"        --> doFloat
+     , className =? "error"           --> doFloat
+     , className =? "notification"    --> doFloat
+     , className =? "pinentry-gtk-2"  --> doFloat
+     , className =? "splash"          --> doFloat
+     , className =? "toolbar"         --> doFloat
+     , className =? "qutebrowser"     --> doShift ( myWorkspaces !! 0 )
+     , className =? "mpv"             --> doShift ( myWorkspaces !! 3 )
+		]
 
 ------------------------------------------------------------------------
 -- Event handling
