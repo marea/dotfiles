@@ -1,6 +1,11 @@
 shell = "bash -c '{}'"
 
 [[item]]
+file = "~/.config/tridactyl/themes/base16.css"
+template = "tridactyl"
+rewrite = true
+
+[[item]]
 file = "~/.doom.d/themes/base16-theme.el"
 template = "emacs"
 rewrite = true
