@@ -43,6 +43,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
     , ((modm,               xK_r     ), spawn myDmenuCommand)
     , ((modm,               xK_p     ), spawn "bitwarden-dmenu --dmenu-args='-b' --dmenu-pswd-args='-b'")
+    , ((modm,               xK_grave ), spawn "/home/marea/.bin/emojipick")
     , ((modm,               xK_e     ), spawn "alacritty -e nnn")
 
     , ((modm .|. shiftMask, xK_q     ), kill)
