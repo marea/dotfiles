@@ -133,7 +133,8 @@ myLogHook = return ()
 myStartupHook = do
   spawnOnce "~/.fehbg &"
   spawnOnce "picom &"
-  spawnOnce "megasync &"
+  --spawnOnce "megasync &"
+  spawnOnce "transmission-daemon &"
   spawnOnce "nm-applet &"
   spawnOnce "pa-applet &"
   spawnOnce "setxkbmap -option compose:ralt &"
