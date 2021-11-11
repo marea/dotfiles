@@ -19,4 +19,4 @@ o.shiftwidth = 2
 bo.textwidth = 80
 o.textwidth = 80
 
-vim.cmd(':colorscheme base16')
+vim.cmd(':colorscheme base16-generated')

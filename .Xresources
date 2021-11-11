@@ -2,22 +2,22 @@
 ! Base16 Generated
 ! Scheme: Flavours
 
-#define base00 #1b282d
-#define base01 #40484b
-#define base02 #656868
-#define base03 #8a8986
-#define base04 #aea9a3
-#define base05 #d3c9c0
-#define base06 #d9d1ca
-#define base07 #e0d9d3
-#define base08 #8b7b7b
-#define base09 #6c7a87
-#define base0A #707982
-#define base0B #627d83
-#define base0C #687c7d
-#define base0D #677c7c
-#define base0E #6a7b86
-#define base0F #8c837b
+#define base00 #382119
+#define base01 #554037
+#define base02 #715f55
+#define base03 #8e7e72
+#define base04 #ab9d90
+#define base05 #c7bcae
+#define base06 #cfc6ba
+#define base07 #d8d0c6
+#define base08 #d64627
+#define base09 #a46c2c
+#define base0A #ad680b
+#define base0B #b49303
+#define base0C #c28623
+#define base0D #ae6641
+#define base0E #ba6011
+#define base0F #c35914
 
 *foreground:   base05
 #ifdef background_opacity

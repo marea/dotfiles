@@ -1,18 +1,6 @@
 shell = "bash -c '{}'"
 
 [[item]]
-file = "~/.mozilla/firefox/d8a6lpyr.default-release/chrome/userChrome.css"
-template = "firefox"
-start= "/* Start Flavours */"
-end = "/* End flavours */"
-
-[[item]]
-file = "~/.config/tridactyl/themes/base16.css"
-template = "tridactyl"
-subtemplate = "default-alt"
-rewrite = true
-
-[[item]]
 file = "~/.doom.d/themes/base16-theme.el"
 template = "emacs"
 rewrite = true

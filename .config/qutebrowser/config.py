@@ -10,22 +10,22 @@ c.auto_save.session = True
 # Base16 qutebrowser template by theova
 # Generated scheme by Flavours
 
-base00 = "#1b282d"
-base01 = "#40484b"
-base02 = "#656868"
-base03 = "#8a8986"
-base04 = "#aea9a3"
-base05 = "#d3c9c0"
-base06 = "#d9d1ca"
-base07 = "#e0d9d3"
-base08 = "#8b7b7b"
-base09 = "#6c7a87"
-base0A = "#707982"
-base0B = "#627d83"
-base0C = "#687c7d"
-base0D = "#677c7c"
-base0E = "#6a7b86"
-base0F = "#8c837b"
+base00 = "#382119"
+base01 = "#554037"
+base02 = "#715f55"
+base03 = "#8e7e72"
+base04 = "#ab9d90"
+base05 = "#c7bcae"
+base06 = "#cfc6ba"
+base07 = "#d8d0c6"
+base08 = "#d64627"
+base09 = "#a46c2c"
+base0A = "#ad680b"
+base0B = "#b49303"
+base0C = "#c28623"
+base0D = "#ae6641"
+base0E = "#ba6011"
+base0F = "#c35914"
 
 # set qutebrowser colors
 
@@ -168,6 +168,9 @@ c.colors.prompts.bg = base00
 
 # Background color for the selected item in filename prompts.
 c.colors.prompts.selected.bg = base02
+
+# Foreground color for the selected item in filename prompts.
+c.colors.prompts.selected.fg = base05
 
 # Foreground color of the statusbar.
 c.colors.statusbar.normal.fg = base0B
