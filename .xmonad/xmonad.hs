@@ -107,7 +107,7 @@ myLayout = avoidStruts(
 -- Window rules:
 myManageHook = insertPosition Below Newer <+> composeAll
     [ resource  =? "desktop_window" --> doIgnore
-		 , className =? "confirm"         --> doFloat
+     , className =? "confirm"         --> doFloat
      , className =? "file_progress"   --> doFloat
      , className =? "dialog"          --> doFloat
      , className =? "download"        --> doFloat
@@ -118,7 +118,7 @@ myManageHook = insertPosition Below Newer <+> composeAll
      , className =? "toolbar"         --> doFloat
      , className =? "qutebrowser"     --> doShift ( myWorkspaces !! 0 )
      , className =? "mpv"             --> doShift ( myWorkspaces !! 3 )
-		]
+    ]
 
 ------------------------------------------------------------------------
 -- Event handling
