@@ -18,9 +18,7 @@ require('packer').startup(function()
 	use {
 		'kyazdani42/nvim-tree.lua',
 		config = function()
-			vim.cmd("let g:nvim_tree_quit_on_open = 1")
-			vim.cmd("let g:nvim_tree_hide_dotfiles = 1")
-			vim.cmd("let g:nvim_tree_highlight_opened_files = 1")
+			require('nvim-tree').setup { }
 		end
 	}
 	use {
