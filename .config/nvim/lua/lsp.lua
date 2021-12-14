@@ -44,3 +44,12 @@ for _, lsp in ipairs(servers) do
     }
   }
 end
+
+-- TSServer config
+nvim_lsp["tsserver"].setup {
+	init_options = {
+		preferences = {
+			disableSuggestions = true
+		}
+	}
+}

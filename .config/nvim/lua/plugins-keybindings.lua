@@ -14,3 +14,9 @@ map('n', '<A->>', ':BufferMoveNext<CR>', options)
 
 -- rest.nvim
 --map('n', '<C-r>', '<Plug>RestNvim', {})
+
+-- telescope.nvim
+map('n', ',ff', ':lua require("telescope.builtin").find_files()<cr>', options)
+map('n', ',fg', ':lua require("telescope.builtin").live_grep()<cr>', options)
+map('n', ',fb', ':lua require("telescope.builtin").buffers()<cr>', options)
+map('n', ',fh', ':lua require("telescope.builtin").help_tags()<cr>', options)

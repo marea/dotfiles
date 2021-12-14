@@ -78,4 +78,25 @@ require('packer').startup(function()
 			vim.cmd('autocmd CursorMoved * IndentBlanklineRefresh')
 		end
 	}
+	use {
+		'nvim-telescope/telescope.nvim',
+		requires = { {'nvim-lua/plenary.nvim'} }
+	}
+	use "p00f/nvim-ts-rainbow"
+	use "folke/twilight.nvim"
+	use {"romgrk/nvim-treesitter-context",
+		config= function()
+			require'treesitter-context'.setup{
+				enable = true,
+				throttle = true,
+				max_lines = 2,
+				patterns = {
+					default = {
+						'class',
+						'function',
+						'method',
+					},
+				},
+			}
+		end}
 end)
