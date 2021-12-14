@@ -10,22 +10,22 @@ c.auto_save.session = True
 # Base16 qutebrowser template by theova
 # Generated scheme by Flavours
 
-base00 = "#382119"
-base01 = "#554037"
-base02 = "#715f55"
-base03 = "#8e7e72"
-base04 = "#ab9d90"
-base05 = "#c7bcae"
-base06 = "#cfc6ba"
-base07 = "#d8d0c6"
-base08 = "#d64627"
-base09 = "#a46c2c"
-base0A = "#ad680b"
-base0B = "#b49303"
-base0C = "#c28623"
-base0D = "#ae6641"
-base0E = "#ba6011"
-base0F = "#c35914"
+base00 = "#3d221c"
+base01 = "#5c453f"
+base02 = "#7c6862"
+base03 = "#9b8b84"
+base04 = "#baafa7"
+base05 = "#d9d2ca"
+base06 = "#dfd8d2"
+base07 = "#e4dfda"
+base08 = "#956d83"
+base09 = "#906f7d"
+base0A = "#787878"
+base0B = "#89818c"
+base0C = "#907168"
+base0D = "#bb5d46"
+base0E = "#8b9296"
+base0F = "#847572"
 
 # set qutebrowser colors
 

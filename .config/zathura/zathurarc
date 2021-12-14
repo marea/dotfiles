@@ -3,34 +3,34 @@ set recolor
 # Base16 Generated
 # Author: Flavours
 
-set default-bg                  "#382119"
-set default-fg                  "#554037"
+set default-bg                  "#3d221c"
+set default-fg                  "#5c453f"
 
-set statusbar-fg                "#ab9d90"
-set statusbar-bg                "#715f55"
+set statusbar-fg                "#baafa7"
+set statusbar-bg                "#7c6862"
 
-set inputbar-bg                 "#382119"
-set inputbar-fg                 "#d8d0c6"
+set inputbar-bg                 "#3d221c"
+set inputbar-fg                 "#e4dfda"
 
-set notification-bg             "#382119"
-set notification-fg             "#d8d0c6"
+set notification-bg             "#3d221c"
+set notification-fg             "#e4dfda"
 
-set notification-error-bg       "#382119"
-set notification-error-fg       "#d64627"
+set notification-error-bg       "#3d221c"
+set notification-error-fg       "#956d83"
 
-set notification-warning-bg     "#382119"
-set notification-warning-fg     "#d64627"
+set notification-warning-bg     "#3d221c"
+set notification-warning-fg     "#956d83"
 
-set highlight-color             "#ad680b"
-set highlight-active-color      "#ae6641"
+set highlight-color             "#787878"
+set highlight-active-color      "#bb5d46"
 
-set completion-bg               "#554037"
-set completion-fg               "#ae6641"
+set completion-bg               "#5c453f"
+set completion-fg               "#bb5d46"
 
-set completion-highlight-fg     "#d8d0c6"
-set completion-highlight-bg     "#ae6641"
+set completion-highlight-fg     "#e4dfda"
+set completion-highlight-bg     "#bb5d46"
 
-set recolor-lightcolor          "#382119"
-set recolor-darkcolor           "#cfc6ba"
+set recolor-lightcolor          "#3d221c"
+set recolor-darkcolor           "#dfd8d2"
 # End Flavours
 
