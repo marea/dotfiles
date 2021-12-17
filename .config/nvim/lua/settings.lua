@@ -20,3 +20,9 @@ bo.textwidth = 80
 o.textwidth = 80
 
 vim.cmd(':colorscheme base16-generated')
+
+o.undodir = vim.fn.stdpath('config') .. '/undo'
+o.undofile = true
+bo.undofile = true
+o.backupdir = vim.fn.stdpath('config') .. '/backup'
+o.directory = vim.fn.stdpath('config') .. '/swap'
