@@ -26,3 +26,5 @@ o.undofile = true
 bo.undofile = true
 o.backupdir = vim.fn.stdpath('config') .. '/backup'
 o.directory = vim.fn.stdpath('config') .. '/swap'
+
+o.sessionoptions="blank,buffers,curdir,folds,help,tabpages,winsize,winpos,terminal"

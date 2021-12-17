@@ -102,7 +102,9 @@ require('packer').startup(function()
 	use {
 		'rmagatti/auto-session',
 		config = function()
-			require('auto-session').setup {}
+			require('auto-session').setup {
+				auto_save_enabled = true
+			}
 		end
 	}
 end)
