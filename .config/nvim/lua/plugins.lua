@@ -99,4 +99,10 @@ require('packer').startup(function()
 				},
 			}
 		end}
+	use {
+		'rmagatti/auto-session',
+		config = function()
+			require('auto-session').setup {}
+		end
+	}
 end)
