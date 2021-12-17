@@ -33,7 +33,14 @@ module-margin-right = 1
 
 modules-left = ewmh
 modules-center = polywins
-modules-right = updates-pacman-aurhelper xbacklight date
+modules-right = polytiramisu updates-pacman-aurhelper xbacklight date
+
+[module/polytiramisu]
+type = custom/script
+exec = ~/.config/polybar/polytiramisu.sh 2>/dev/null
+format = <label>
+label-font = 2
+tail = true
 
 [module/polywins]
 type = custom/script
