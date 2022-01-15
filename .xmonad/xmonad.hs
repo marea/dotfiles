@@ -4,6 +4,7 @@ import Data.Monoid
 import System.Exit
 import XMonad
 import XMonad.Actions.FloatSnap
+import XMonad.Actions.CopyWindow
 import XMonad.Hooks.EwmhDesktops (ewmh)
 import XMonad.Hooks.InsertPosition
 import XMonad.Hooks.ManageDocks
@@ -23,7 +24,7 @@ import qualified Data.Map        as M
 
 ------------------------------------------------------------------------
 -- Settings:
-myTerminal      = "alacritty"
+myTerminal      = "xterm"
 myBorderWidth   = 1
 myModMask       = mod4Mask
 myWorkspaces    = ["1","2","3","4","5","6","7","8","9"]
@@ -42,9 +43,9 @@ myDmenuCommand = "dmenu_run -b -fn '" ++ myDmenuFont ++ "' -nb '" ++
 myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     [ ((modm .|. shiftMask, xK_Return), spawn $ XMonad.terminal conf)
     , ((modm,               xK_r     ), spawn myDmenuCommand)
-    , ((modm,               xK_p     ), spawn "bitwarden-dmenu --dmenu-args='-b' --dmenu-pswd-args='-b'")
-    , ((modm,               xK_grave ), spawn "/home/marea/.bin/emojipick")
-    , ((modm,               xK_e     ), spawn "alacritty -e nnn")
+    --, ((modm,               xK_p     ), spawn "bitwarden-dmenu --dmenu-args='-b' --dmenu-pswd-args='-b'")
+    --, ((modm,               xK_grave ), spawn "/home/marea/.bin/emojipick")
+    , ((modm,               xK_e     ), spawn "xterm -e nnn")
 
     , ((modm .|. shiftMask, xK_q     ), kill)
 
@@ -69,7 +70,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm,               xK_n     ), refresh)
 
     , ((modm .|. shiftMask, xK_e     ), io (exitWith ExitSuccess))
-    , ((modm .|. shiftMask, xK_r     ), spawn "xmonad --recompile; xmonad restart")
+    , ((modm .|. shiftMask, xK_r     ), spawn "xmonad --recompile; xmonad --restart")
+		 , ((modm, xK_v ), windows copyToAll)
+ , ((modm .|. shiftMask, xK_v ),  killAllOtherCopies)
     ]
     ++
 
@@ -135,8 +138,8 @@ myStartupHook = do
   spawnOnce "picom &"
   --spawnOnce "megasync &"
   spawnOnce "transmission-daemon &"
-  spawnOnce "nm-applet &"
-  spawnOnce "pa-applet &"
+  --spawnOnce "nm-applet &"
+  --spawnOnce "pa-applet &"
   spawnOnce "setxkbmap -option compose:ralt &"
   spawnOnce "unclutter -idle 3"
   spawnOnce "polybar -r default && xdo lower -N Polybar &"
