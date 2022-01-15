@@ -10,16 +10,18 @@ compinit
 eval "$(starship init zsh)"
 
 typeset -U PATH path
-path=("$HOME/.local/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$HOME/.emacs.d/bin/" "$path[@]")
+path=("$HOME/.local/share/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$HOME/.emacs.d/bin/" "$path[@]")
 export PATH
 
 export GOPATH="$HOME/.golang"
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 
+export EDITOR="vim"
+
 alias ls='exa'
 alias la='exa -a'
 alias q='exit'
-alias cat='bat'
+alias cat='batcat'
 alias dof='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
 alias grabc='grabc | xclip -selection clipboard'
 
@@ -32,6 +34,11 @@ export LESS="--RAW-CONTROL-CHARS"
 lesscolors=$HOME/.bin/.LESS_TERMCAP
 [[ -f $lesscolors ]] && . $lesscolors
 
-export FZF_DEFAULT_COMMAND='fd --type file --color=always'
+export FZF_DEFAULT_COMMAND='fdfind --type file --color=always'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi"
+
+# nnn config
+export NNN_BMS="i:$HOME/Inbox;d:$HOME/Documents;w:$HOME/Working;m:$HOME/Media"
+export NNN_COLORS="1111"
+export NNN_SSHFS='sshfs -o reconnect,idmap=user'
