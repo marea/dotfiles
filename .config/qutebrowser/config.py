@@ -8,24 +8,24 @@ c.auto_save.session = True
 # Start flavours
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Base16 qutebrowser template by theova
-# Generated scheme by Flavours
+# Chalk scheme by Chris Kempson (http://chriskempson.com)
 
-base00 = "#3d221c"
-base01 = "#5c453f"
-base02 = "#7c6862"
-base03 = "#9b8b84"
-base04 = "#baafa7"
-base05 = "#d9d2ca"
-base06 = "#dfd8d2"
-base07 = "#e4dfda"
-base08 = "#956d83"
-base09 = "#906f7d"
-base0A = "#787878"
-base0B = "#89818c"
-base0C = "#907168"
-base0D = "#bb5d46"
-base0E = "#8b9296"
-base0F = "#847572"
+base00 = "#151515"
+base01 = "#202020"
+base02 = "#303030"
+base03 = "#505050"
+base04 = "#b0b0b0"
+base05 = "#d0d0d0"
+base06 = "#e0e0e0"
+base07 = "#f5f5f5"
+base08 = "#fb9fb1"
+base09 = "#eda987"
+base0A = "#ddb26f"
+base0B = "#acc267"
+base0C = "#12cfc0"
+base0D = "#6fc2ef"
+base0E = "#e1a3ee"
+base0F = "#deaf8f"
 
 # set qutebrowser colors
 

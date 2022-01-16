@@ -20,46 +20,46 @@ types = ["image"]
 no_prompt = true
 
 # Start flavours
-# Base16 Generated - amfora color config
-# Flavours
+# Base16 Chalk - amfora color config
+# Chris Kempson (http://chriskempson.com)
 
 [theme]
-bg = "#3d221c"
-fg = "#d9d2ca"
+bg = "#151515"
+fg = "#d0d0d0"
 
-bottombar_label = "#8b9296"
-bottombar_text = "#d9d2ca"
-bottombar_bg = "#5c453f"
+bottombar_label = "#e1a3ee"
+bottombar_text = "#d0d0d0"
+bottombar_bg = "#202020"
 
-tab_num = "#7c6862"
-tab_divider = "#baafa7"
+tab_num = "#303030"
+tab_divider = "#b0b0b0"
 
-amfora_link = "#89818c"
-foreign_link = "#9b8b84"
-link_number = "#9b8b84"
+amfora_link = "#acc267"
+foreign_link = "#505050"
+link_number = "#505050"
 
-btn_bg = "#5c453f"
-btn_text = "#d9d2ca"
+btn_bg = "#202020"
+btn_text = "#d0d0d0"
 
-input_modal_bg = "#5c453f"
-input_modal_text = "#d9d2ca"
-input_modal_field_bg = "#3d221c"
-input_modal_field_text = "#d9d2ca"
-info_modal_bg = "#5c453f"
-info_modal_text = "#d9d2ca"
-error_modal_bg = "#5c453f"
-error_modal_text = "#847572"
-yesno_modal_bg = "#5c453f"
-yesno_modal_text = "#d9d2ca"
-tofu_modal_bg = "#5c453f"
-tofu_modal_text = "#d9d2ca"
-subscription_modal_bg = "#5c453f"
-subscription_modal_text = "#d9d2ca"
+input_modal_bg = "#202020"
+input_modal_text = "#d0d0d0"
+input_modal_field_bg = "#151515"
+input_modal_field_text = "#d0d0d0"
+info_modal_bg = "#202020"
+info_modal_text = "#d0d0d0"
+error_modal_bg = "#202020"
+error_modal_text = "#deaf8f"
+yesno_modal_bg = "#202020"
+yesno_modal_text = "#d0d0d0"
+tofu_modal_bg = "#202020"
+tofu_modal_text = "#d0d0d0"
+subscription_modal_bg = "#202020"
+subscription_modal_text = "#d0d0d0"
 
-hdg_1 = "#906f7d"
-hdg_2 = "#787878"
-hdg_3 = "#bb5d46"
-regular_text = "#d9d2ca"
-preformatted_text = "#907168"
-list_text = "#d9d2ca"
+hdg_1 = "#eda987"
+hdg_2 = "#ddb26f"
+hdg_3 = "#6fc2ef"
+regular_text = "#d0d0d0"
+preformatted_text = "#12cfc0"
+list_text = "#d0d0d0"
 # End Flavours
