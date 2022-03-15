@@ -84,4 +84,5 @@ XTerm.vt100.translations: #override \n\
     Ctrl Shift <Key>K: scroll-back(1, halfpage) \n\
     Ctrl Shift <Key>J: scroll-forw(1, halfpage) \n\
     Ctrl Shift <Key>C: copy-selection(CLIPBOARD) \n\
-    Ctrl Shift <Key>V: insert-selection(CLIPBOARD)
+    Ctrl Shift <Key>V: insert-selection(CLIPBOARD) \n\
+		Ctrl Shift <Key>N: exec-formatted("xterm -e zsh", SELECT)
