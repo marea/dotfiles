@@ -33,7 +33,7 @@ module-margin-right = 1
 
 modules-left = ewmh
 modules-center = polywins
-modules-right = polytiramisu xbacklight date
+modules-right = polytiramisu xbacklight date pulseaudio
 
 [module/polytiramisu]
 type = custom/script
@@ -116,5 +116,18 @@ screenchange-reload = true
 [global/wm]
 margin-top = 0
 margin-bottom = 0
+
+[module/pulseaudio]
+label-font = 2
+type = internal/pulseaudio
+use-ui-max = false
+interval = 5
+format-volume = <ramp-volume>
+label-muted = ﱝ
+label-muted-foreground = #666
+ramp-volume-0 = 奄
+ramp-volume-1 = 奔
+ramp-volume-2 = 墳
+click-right = pavucontrol
 
 ; vim:ft=dosini
