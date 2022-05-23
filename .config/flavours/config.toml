@@ -1,24 +1,6 @@
 shell = "bash -c '{}'"
 
 [[item]]
-file = "~/.doom.d/themes/base16-theme.el"
-template = "emacs"
-rewrite = true
-
-[[item]]
-file = "~/.xmonad/lib/MyColors.hs"
-template = "xmonad"
-rewrite = true
-
-[[item]]
-file = "~/.config/polybar/config"
-template = "polybar"
-
-[[item]]
-file = "~/.config/alacritty/alacritty.yml"
-template = "alacritty"
-
-[[item]]
 file = "~/.Xresources"
 template = "xresources"
 start= "! Start flavours"
@@ -36,28 +18,8 @@ template = "vim"
 rewrite = true
 
 [[item]]
-file = "~/.config/qutebrowser/config.py"
-template = "qutebrowser"
-
-[[item]]
 file = "~/.config/amfora/config.toml"
 template = "amfora"
-
-[[item]]
-file = "~/.config/xob/styles.cfg"
-template = "xob"
-
-[[item]]
-file = "~/.config/xob/styles.cfg"
-template = "xob"
-start= "## Start flavours"
-end = "## End flavours"
-
-[[item]]
-file = "~/.browser/style.css"
-template = "startpage"
-start= "/* Start flavours */"
-end = "/* End flavours */"
 
 [[item]]
 file = "~/.themes/FlatColor/colors2"
@@ -70,3 +32,9 @@ file = "~/.themes/FlatColor/colors3"
 template = "gtk-flatcolor"
 subtemplate = "gtk-3"
 rewrite = true
+
+[[item]]
+file = "~/.git/dwm/config.def.h"
+template = "dwm"
+start = "// Start flavours"
+end = "// End flavours"
