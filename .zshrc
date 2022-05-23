@@ -10,7 +10,7 @@ compinit
 eval "$(starship init zsh)"
 
 typeset -U PATH path
-path=("$HOME/.local/share/bin" "$HOME/.local/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$HOME/.emacs.d/bin/" "/usr/local/go/bin" "$path[@]")
+path=("$HOME/.local/share/bin" "$HOME/.local/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$HOME/.emacs.d/bin/" "/usr/local/go/bin" "$HOME/.pyenv/bin" "$HOME/.pyenv/shims" "$path[@]")
 export PATH
 
 export GOPATH="$HOME/.golang"
@@ -45,3 +45,8 @@ export NNN_SSHFS='sshfs -o reconnect,idmap=user'
 
 # Xterm
 [ -n "$XTERM_VERSION" ] && transset --id "$WINDOWID" 0.9 >/dev/null
+
+
+\cat ~/Documents/Notes/TODO | grep "\[ \]"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"

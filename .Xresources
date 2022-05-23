@@ -1,23 +1,23 @@
 ! Start flavours
-! Base16 Chalk
-! Scheme: Chris Kempson (http://chriskempson.com)
+! Base16 Generated
+! Scheme: Flavours
 
-#define base00 #151515
-#define base01 #202020
-#define base02 #303030
-#define base03 #505050
-#define base04 #b0b0b0
-#define base05 #d0d0d0
-#define base06 #e0e0e0
-#define base07 #f5f5f5
-#define base08 #fb9fb1
-#define base09 #eda987
-#define base0A #ddb26f
-#define base0B #acc267
-#define base0C #12cfc0
-#define base0D #6fc2ef
-#define base0E #e1a3ee
-#define base0F #deaf8f
+#define base00 #262626
+#define base01 #474747
+#define base02 #686868
+#define base03 #898989
+#define base04 #aaaaaa
+#define base05 #cbcbcb
+#define base06 #d3d3d3
+#define base07 #dadada
+#define base08 #976e6e
+#define base09 #4e854e
+#define base0A #9c6e4f
+#define base0B #a162a1
+#define base0C #787878
+#define base0D #787878
+#define base0E #787878
+#define base0F #787878
 
 *foreground:   base05
 #ifdef background_opacity

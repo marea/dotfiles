@@ -29,40 +29,40 @@ key_bindings:
   - { key: Return, mods: Control|Shift, action: SpawnNewInstance }
 
 # Start flavours
-# Base16 Chalk - alacritty color config
-# Chris Kempson (http://chriskempson.com)
+# Base16 Generated - alacritty color config
+# Flavours
 colors:
   # Default colors
   primary:
-    background: '0x151515'
-    foreground: '0xd0d0d0'
+    background: '0x262626'
+    foreground: '0xcbcbcb'
 
   # Colors the cursor will use if `custom_cursor_colors` is true
   cursor:
-    text: '0x151515'
-    cursor: '0xd0d0d0'
+    text: '0x262626'
+    cursor: '0xcbcbcb'
 
   # Normal colors
   normal:
-    black:   '0x151515'
-    red:     '0xfb9fb1'
-    green:   '0xacc267'
-    yellow:  '0xddb26f'
-    blue:    '0x6fc2ef'
-    magenta: '0xe1a3ee'
-    cyan:    '0x12cfc0'
-    white:   '0xd0d0d0'
+    black:   '0x262626'
+    red:     '0x976e6e'
+    green:   '0xa162a1'
+    yellow:  '0x9c6e4f'
+    blue:    '0x787878'
+    magenta: '0x787878'
+    cyan:    '0x787878'
+    white:   '0xcbcbcb'
 
   # Bright colors
   bright:
-    black:   '0x505050'
-    red:     '0xeda987'
-    green:   '0x202020'
-    yellow:  '0x303030'
-    blue:    '0xb0b0b0'
-    magenta: '0xe0e0e0'
-    cyan:    '0xdeaf8f'
-    white:   '0xf5f5f5'
+    black:   '0x898989'
+    red:     '0x4e854e'
+    green:   '0x474747'
+    yellow:  '0x686868'
+    blue:    '0xaaaaaa'
+    magenta: '0xd3d3d3'
+    cyan:    '0x787878'
+    white:   '0xdadada'
 
 draw_bold_text_with_bright_colors: false
 # End flavours

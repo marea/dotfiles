@@ -1,36 +1,36 @@
 set recolor
 # Start flavours
-# Base16 Chalk
-# Author: Chris Kempson (http://chriskempson.com)
+# Base16 Generated
+# Author: Flavours
 
-set default-bg                  "#151515"
-set default-fg                  "#202020"
+set default-bg                  "#262626"
+set default-fg                  "#474747"
 
-set statusbar-fg                "#b0b0b0"
-set statusbar-bg                "#303030"
+set statusbar-fg                "#aaaaaa"
+set statusbar-bg                "#686868"
 
-set inputbar-bg                 "#151515"
-set inputbar-fg                 "#f5f5f5"
+set inputbar-bg                 "#262626"
+set inputbar-fg                 "#dadada"
 
-set notification-bg             "#151515"
-set notification-fg             "#f5f5f5"
+set notification-bg             "#262626"
+set notification-fg             "#dadada"
 
-set notification-error-bg       "#151515"
-set notification-error-fg       "#fb9fb1"
+set notification-error-bg       "#262626"
+set notification-error-fg       "#976e6e"
 
-set notification-warning-bg     "#151515"
-set notification-warning-fg     "#fb9fb1"
+set notification-warning-bg     "#262626"
+set notification-warning-fg     "#976e6e"
 
-set highlight-color             "#ddb26f"
-set highlight-active-color      "#6fc2ef"
+set highlight-color             "#9c6e4f"
+set highlight-active-color      "#787878"
 
-set completion-bg               "#202020"
-set completion-fg               "#6fc2ef"
+set completion-bg               "#474747"
+set completion-fg               "#787878"
 
-set completion-highlight-fg     "#f5f5f5"
-set completion-highlight-bg     "#6fc2ef"
+set completion-highlight-fg     "#dadada"
+set completion-highlight-bg     "#787878"
 
-set recolor-lightcolor          "#151515"
-set recolor-darkcolor           "#e0e0e0"
+set recolor-lightcolor          "#262626"
+set recolor-darkcolor           "#d3d3d3"
 # End Flavours
 
