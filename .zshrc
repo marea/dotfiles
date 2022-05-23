@@ -10,7 +10,7 @@ compinit
 eval "$(starship init zsh)"
 
 typeset -U PATH path
-path=("$HOME/.local/share/bin" "$HOME/.local/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "$HOME/.emacs.d/bin/" "/usr/local/go/bin" "$HOME/.pyenv/bin" "$HOME/.pyenv/shims" "$path[@]")
+path=("$HOME/.local/share/bin" "$HOME/.local/bin" "$HOME/.bin" "$HOME/.npm-modules/bin" "$HOME/.golang/bin" "$HOME/.local/share/gem/ruby/3.0.0/bin" "/usr/local/go/bin" "$path[@]")
 export PATH
 
 export GOPATH="$HOME/.golang"
@@ -21,9 +21,8 @@ export EDITOR="vim"
 alias ls='exa'
 alias la='exa -a'
 alias q='exit'
-alias cat='batcat'
+alias cat='bat'
 alias dof='git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-alias grabc='grabc | xclip -selection clipboard'
 
 source /usr/share/fzf/key-bindings.zsh
 source /usr/share/fzf/completion.zsh
@@ -34,7 +33,7 @@ export LESS="--RAW-CONTROL-CHARS"
 lesscolors=$HOME/.bin/.LESS_TERMCAP
 [[ -f $lesscolors ]] && . $lesscolors
 
-export FZF_DEFAULT_COMMAND='fdfind --type file --color=always'
+export FZF_DEFAULT_COMMAND='fd --type file --color=always'
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS="--ansi"
 
@@ -48,5 +47,3 @@ export NNN_SSHFS='sshfs -o reconnect,idmap=user'
 
 
 \cat ~/Documents/Notes/TODO | grep "\[ \]"
-eval "$(pyenv init -)"
-eval "$(pyenv virtualenv-init -)"
