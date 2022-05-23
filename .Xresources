@@ -1,23 +1,23 @@
 ! Start flavours
-! Base16 Generated
-! Scheme: Flavours
+! Base16 Darcula
+! Scheme: jetbrains
 
-#define base00 #262626
-#define base01 #474747
-#define base02 #686868
-#define base03 #898989
-#define base04 #aaaaaa
-#define base05 #cbcbcb
-#define base06 #d3d3d3
-#define base07 #dadada
-#define base08 #976e6e
-#define base09 #4e854e
-#define base0A #9c6e4f
-#define base0B #a162a1
-#define base0C #787878
-#define base0D #787878
-#define base0E #787878
-#define base0F #787878
+#define base00 #2b2b2b
+#define base01 #323232
+#define base02 #323232
+#define base03 #606366
+#define base04 #a4a3a3
+#define base05 #a9b7c6
+#define base06 #ffc66d
+#define base07 #ffffff
+#define base08 #4eade5
+#define base09 #689757
+#define base0A #bbb529
+#define base0B #6a8759
+#define base0C #629755
+#define base0D #9876aa
+#define base0E #cc7832
+#define base0F #808080
 
 *foreground:   base05
 #ifdef background_opacity
