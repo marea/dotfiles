@@ -1,0 +1,7 @@
+#!/bin/bash
+
+URL=$@
+for track in $(curl "$URL/music" | pup "li.music-grid-item a attr{href}")
+do
+	bandcamp-dl --base-dir=$HOME/Media/Music $URL$track
+done
