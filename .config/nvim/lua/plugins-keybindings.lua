@@ -1,22 +1,24 @@
-local map = vim.api.nvim_set_keymap
 local options = { noremap = true, silent = true }
 
 -- nvim-tree
-map('n', '<C-n>', ':NvimTreeToggle<CR>', options)
+vim.keymap.set('n', '<C-n>', ':NvimTreeToggle<CR>', options)
 
 -- barbar.nvim
-map('n', '<C-s>', ':BufferPick<CR>', options)
-map('n', '<A-c>', ':BufferClose<CR>', options)
-map('n', '<A-,>', ':BufferPrevious<CR>', options)
-map('n', '<A-.>', ':BufferNext<CR>', options)
-map('n', '<A-<>', ':BufferMovePrevious<CR>', options)
-map('n', '<A->>', ':BufferMoveNext<CR>', options)
-
--- rest.nvim
---map('n', '<C-r>', '<Plug>RestNvim', {})
+vim.keymap.set('n', '<A-c>', ':BufferClose<CR>', options)
+vim.keymap.set('n', '<A-,>', ':BufferPrevious<CR>', options)
+vim.keymap.set('n', '<A-.>', ':BufferNext<CR>', options)
 
 -- telescope.nvim
-map('n', ',ff', ':lua require("telescope.builtin").find_files()<cr>', options)
-map('n', ',fg', ':lua require("telescope.builtin").live_grep()<cr>', options)
-map('n', ',fb', ':lua require("telescope.builtin").buffers()<cr>', options)
-map('n', ',fh', ':lua require("telescope.builtin").help_tags()<cr>', options)
+vim.keymap.set('n', '<leader><space>', require('telescope.builtin').buffers)
+vim.keymap.set('n', '<leader>sf', function()
+  require('telescope.builtin').find_files { previewer = false }
+end)
+vim.keymap.set('n', '<leader>sb', require('telescope.builtin').current_buffer_fuzzy_find)
+vim.keymap.set('n', '<leader>sh', require('telescope.builtin').help_tags)
+vim.keymap.set('n', '<leader>st', require('telescope.builtin').tags)
+vim.keymap.set('n', '<leader>sd', require('telescope.builtin').grep_string)
+vim.keymap.set('n', '<leader>sp', require('telescope.builtin').live_grep)
+vim.keymap.set('n', '<leader>so', function()
+  require('telescope.builtin').tags { only_current_buffer = true }
+end)
+vim.keymap.set('n', '<leader>?', require('telescope.builtin').oldfiles)
