@@ -1,23 +1,23 @@
 ! Start flavours
-! Base16 Darcula
-! Scheme: jetbrains
+! Base16 Generated
+! Scheme: Flavours
 
-#define base00 #2b2b2b
-#define base01 #323232
-#define base02 #323232
-#define base03 #606366
-#define base04 #a4a3a3
-#define base05 #a9b7c6
-#define base06 #ffc66d
-#define base07 #ffffff
-#define base08 #4eade5
-#define base09 #689757
-#define base0A #bbb529
-#define base0B #6a8759
-#define base0C #629755
-#define base0D #9876aa
-#define base0E #cc7832
-#define base0F #808080
+#define base00 #2e2423
+#define base01 #4f4543
+#define base02 #706663
+#define base03 #918782
+#define base04 #b2a8a2
+#define base05 #d4c9c1
+#define base06 #dad1ca
+#define base07 #e0d9d4
+#define base08 #a26969
+#define base09 #6a7e5c
+#define base0A #7e7394
+#define base0B #e3a46b
+#define base0C #d34930
+#define base0D #956f6e
+#define base0E #a56b37
+#define base0F #b79b94
 
 *foreground:   base05
 #ifdef background_opacity
@@ -45,26 +45,6 @@
 *color14:      base0F
 *color15:      base07
 ! End flavours
-
-dwm.normbgcolor: base00
-dwm.normbordercolor: base00
-dwm.normfgcolor: base06
-dwm.selbgcolor: base02
-dwm.selbordercolor: base02
-dwm.selfgcolor: base06
-dwm.borderpx: 5
-!dwm.snap:
-dwm.showbar: 1
-dwm.nmaster: 1
-dwm.resizehints: 0
-dwm.mfact: 0.55
-
-dmenu.font: GoMono Nerd Font:size=12
-dmenu.background: base00
-dmenu.foreground: base07
-dmenu.selbackground: base02
-dmenu.selforeground: base00
-
 
 ! Sensible defaults
 XTerm.vt100.locale: false

@@ -32,9 +32,3 @@ file = "~/.themes/FlatColor/colors3"
 template = "gtk-flatcolor"
 subtemplate = "gtk-3"
 rewrite = true
-
-[[item]]
-file = "~/.git/dwm/config.def.h"
-template = "dwm"
-start = "// Start flavours"
-end = "// End flavours"

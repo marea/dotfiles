@@ -1,36 +1,36 @@
 set recolor
 # Start flavours
-# Base16 Darcula
-# Author: jetbrains
+# Base16 Generated
+# Author: Flavours
 
-set default-bg                  "#2b2b2b"
-set default-fg                  "#323232"
+set default-bg                  "#2e2423"
+set default-fg                  "#4f4543"
 
-set statusbar-fg                "#a4a3a3"
-set statusbar-bg                "#323232"
+set statusbar-fg                "#b2a8a2"
+set statusbar-bg                "#706663"
 
-set inputbar-bg                 "#2b2b2b"
-set inputbar-fg                 "#ffffff"
+set inputbar-bg                 "#2e2423"
+set inputbar-fg                 "#e0d9d4"
 
-set notification-bg             "#2b2b2b"
-set notification-fg             "#ffffff"
+set notification-bg             "#2e2423"
+set notification-fg             "#e0d9d4"
 
-set notification-error-bg       "#2b2b2b"
-set notification-error-fg       "#4eade5"
+set notification-error-bg       "#2e2423"
+set notification-error-fg       "#a26969"
 
-set notification-warning-bg     "#2b2b2b"
-set notification-warning-fg     "#4eade5"
+set notification-warning-bg     "#2e2423"
+set notification-warning-fg     "#a26969"
 
-set highlight-color             "#bbb529"
-set highlight-active-color      "#9876aa"
+set highlight-color             "#7e7394"
+set highlight-active-color      "#956f6e"
 
-set completion-bg               "#323232"
-set completion-fg               "#9876aa"
+set completion-bg               "#4f4543"
+set completion-fg               "#956f6e"
 
-set completion-highlight-fg     "#ffffff"
-set completion-highlight-bg     "#9876aa"
+set completion-highlight-fg     "#e0d9d4"
+set completion-highlight-bg     "#956f6e"
 
-set recolor-lightcolor          "#2b2b2b"
-set recolor-darkcolor           "#ffc66d"
+set recolor-lightcolor          "#2e2423"
+set recolor-darkcolor           "#dad1ca"
 # End Flavours
 

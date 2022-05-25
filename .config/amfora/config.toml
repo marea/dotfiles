@@ -20,46 +20,46 @@ types = ["image"]
 no_prompt = true
 
 # Start flavours
-# Base16 Darcula - amfora color config
-# jetbrains
+# Base16 Generated - amfora color config
+# Flavours
 
 [theme]
-bg = "#2b2b2b"
-fg = "#a9b7c6"
+bg = "#2e2423"
+fg = "#d4c9c1"
 
-bottombar_label = "#cc7832"
-bottombar_text = "#a9b7c6"
-bottombar_bg = "#323232"
+bottombar_label = "#a56b37"
+bottombar_text = "#d4c9c1"
+bottombar_bg = "#4f4543"
 
-tab_num = "#323232"
-tab_divider = "#a4a3a3"
+tab_num = "#706663"
+tab_divider = "#b2a8a2"
 
-amfora_link = "#6a8759"
-foreign_link = "#606366"
-link_number = "#606366"
+amfora_link = "#e3a46b"
+foreign_link = "#918782"
+link_number = "#918782"
 
-btn_bg = "#323232"
-btn_text = "#a9b7c6"
+btn_bg = "#4f4543"
+btn_text = "#d4c9c1"
 
-input_modal_bg = "#323232"
-input_modal_text = "#a9b7c6"
-input_modal_field_bg = "#2b2b2b"
-input_modal_field_text = "#a9b7c6"
-info_modal_bg = "#323232"
-info_modal_text = "#a9b7c6"
-error_modal_bg = "#323232"
-error_modal_text = "#808080"
-yesno_modal_bg = "#323232"
-yesno_modal_text = "#a9b7c6"
-tofu_modal_bg = "#323232"
-tofu_modal_text = "#a9b7c6"
-subscription_modal_bg = "#323232"
-subscription_modal_text = "#a9b7c6"
+input_modal_bg = "#4f4543"
+input_modal_text = "#d4c9c1"
+input_modal_field_bg = "#2e2423"
+input_modal_field_text = "#d4c9c1"
+info_modal_bg = "#4f4543"
+info_modal_text = "#d4c9c1"
+error_modal_bg = "#4f4543"
+error_modal_text = "#b79b94"
+yesno_modal_bg = "#4f4543"
+yesno_modal_text = "#d4c9c1"
+tofu_modal_bg = "#4f4543"
+tofu_modal_text = "#d4c9c1"
+subscription_modal_bg = "#4f4543"
+subscription_modal_text = "#d4c9c1"
 
-hdg_1 = "#689757"
-hdg_2 = "#bbb529"
-hdg_3 = "#9876aa"
-regular_text = "#a9b7c6"
-preformatted_text = "#629755"
-list_text = "#a9b7c6"
+hdg_1 = "#6a7e5c"
+hdg_2 = "#7e7394"
+hdg_3 = "#956f6e"
+regular_text = "#d4c9c1"
+preformatted_text = "#d34930"
+list_text = "#d4c9c1"
 # End Flavours

@@ -47,3 +47,4 @@ export NNN_SSHFS='sshfs -o reconnect,idmap=user'
 
 
 \cat ~/Documents/Notes/TODO | grep "\[ \]"
+export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
