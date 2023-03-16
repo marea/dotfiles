@@ -1,0 +1,13 @@
+shell = "bash -c '{}'"
+
+[[item]]
+file = "~/.Xresources"
+template = "xresources"
+start= "! Start flavours"
+end = "! End flavours"
+hook = "xrdb ~/.Xresources"
+
+[[item]]
+file = "~/.config/nvim/colors/base16.vim"
+template = "vim"
+rewrite = true
