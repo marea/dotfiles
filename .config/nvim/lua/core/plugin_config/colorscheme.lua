@@ -1,2 +1,2 @@
 vim.o.termguicolors = true
-vim.cmd [[ colorscheme nightfly ]]
+vim.cmd [[ colorscheme base16 ]]
