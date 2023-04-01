@@ -60,8 +60,16 @@ vim.api.nvim_create_autocmd('FileType', {
 })
 
 require'bufferline'.setup {
-  closable = false,
-  icon_separator_active = '',
-  icon_separator_inactive = ''
+  icons = {
+    button = '',
+    separator = {
+      left = '',
+    },
+    inactive = {
+      separator = {
+        left = '',
+      },
+    }
+  },
 }
 
