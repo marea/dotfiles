@@ -46,3 +46,7 @@ require('lspconfig').clangd.setup {
 require('lspconfig').tsserver.setup {
   capabilities = capabilities,
 }
+
+require('lspconfig').omnisharp.setup {
+  capabilities = capabilities,
+}
