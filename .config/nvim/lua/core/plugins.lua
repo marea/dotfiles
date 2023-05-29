@@ -37,7 +37,12 @@ local plugins = {
 	  tag = '0.1.0',
 	  dependencies = { {'nvim-lua/plenary.nvim'} }
   },
-  'romgrk/barbar.nvim'
+  'romgrk/barbar.nvim',
+  'aklt/plantuml-syntax',
+  {
+    'weirongxu/plantuml-previewer.vim',
+    dependencies = { {'tyru/open-browser.vim'} }
+  }
 }
 
 local opts = {}
