@@ -41,4 +41,10 @@ file = "~/.themes/FlatColor/colors3"
 template = "gtk-flatcolor"
 subtemplate = "gtk-3"
 rewrite = true
-hook = "xsettingsd"
+#hook = "xsettingsd"
+
+[[item]]
+file = "~/.config/nvim/lua/core/plugin_config/lualine.lua"
+template = "lualine"
+start = "-- Start flavours"
+end = "-- End flavours"
