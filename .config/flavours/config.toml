@@ -11,3 +11,34 @@ hook = "xrdb ~/.Xresources"
 file = "~/.config/nvim/colors/base16.vim"
 template = "vim"
 rewrite = true
+
+[[item]]
+file = "~/.config/kitty/theme.conf"
+template = "kitty"
+
+[[item]]
+file = "~/.i3/config"
+template = "i3"
+subtemplate = "colors"
+start = "# Start flavours - COLORS"
+end = "# End flavours - COLORS"
+
+[[item]]
+file = "~/.i3/config"
+template = "i3"
+subtemplate = "bar-colors"
+start = "# Start flavours - BAR"
+end = "# End flavours - BAR"
+
+[[item]]
+file = "~/.themes/FlatColor/colors2"
+template = "gtk-flatcolor"
+subtemplate = "gtk-2"
+rewrite = true
+
+[[item]]
+file = "~/.themes/FlatColor/colors3"
+template = "gtk-flatcolor"
+subtemplate = "gtk-3"
+rewrite = true
+hook = "xsettingsd"
