@@ -41,3 +41,5 @@ export FZF_DEFAULT_OPTS="--ansi"
 export NNN_BMS="i:$HOME/Inbox;d:$HOME/Documents;w:$HOME/Working;m:$HOME/Media"
 export NNN_COLORS="1111"
 export NNN_SSHFS='sshfs -o reconnect,idmap=user'
+
+eval $(keychain --eval --quiet github_ed25519)
