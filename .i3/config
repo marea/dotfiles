@@ -248,7 +248,7 @@ colors {
 
     # State             Border  BG      Text
     focused_workspace   $base00 $base00 $base05
-    active_workspace    $base05 $base00 $base00
+    active_workspace    $base00 $base00 $base05
     inactive_workspace  $base00 $base00 $base01
     urgent_workspace    $base08 $base08 $base00
     binding_mode        $base00 $base0A $base00
