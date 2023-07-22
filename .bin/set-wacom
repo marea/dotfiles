@@ -1,0 +1,23 @@
+#!/bin/bash
+
+XRES=1920
+YRES=1080
+XOFF=1920
+YOFF=0
+STYLUSID="Wacom Intuos BT S Pen stylus"
+PADID="Wacom Intuos BT S Pad pad"
+DEFAREAX=15200
+DEFAREAY=9500
+
+
+NEWAREAY=$(echo "$DEFAREAX*($YRES/$XRES)" | bc -l | awk -F '[.=]' '{print $1}')
+
+# Resolution and Area
+xsetwacom set "$STYLUSID" MapToOutput ${XRES}x${YRES}+${XOFF}+${YOFF}
+xsetwacom set "$STYLUSID" Area 0 0 $DEFAREAX $NEWAREAY
+
+# Keys
+xsetwacom set "$PADID" Button 1 "key shift"
+xsetwacom set "$PADID" Button 2 "key control"
+#xsetwacom set "$PADID" Button 3 ""
+#xsetwacom set "$PADID" Button 8 ""
