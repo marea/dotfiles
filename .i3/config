@@ -6,22 +6,22 @@ set $mod Mod4
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #462122
-set $base01 #664748
-set $base02 #866e6d
-set $base03 #a79593
-set $base04 #c7bbb9
-set $base05 #e7e2de
-set $base06 #ebe6e3
-set $base07 #eeebe8
-set $base08 #767690
-set $base09 #f8c79c
-set $base0A #6e7b7b
-set $base0B #dd3c39
-set $base0C #827196
-set $base0D #f0babc
-set $base0E #e2574f
-set $base0F #a3837d
+set $base00 #3c221b
+set $base01 #59433b
+set $base02 #76635a
+set $base03 #94837a
+set $base04 #b1a499
+set $base05 #cec4b8
+set $base06 #d5cdc3
+set $base07 #dcd5cd
+set $base08 #eb230a
+set $base09 #657c87
+set $base0A #6b7991
+set $base0B #bf5c2a
+set $base0C #db4c1d
+set $base0D #9e6d55
+set $base0E #9c8b7c
+set $base0F #d94417
 # End flavours - COLORS
 
 default_border pixel 1
@@ -249,7 +249,7 @@ colors {
 
     # State             Border  BG      Text
     focused_workspace   $base00 $base00 $base05
-    active_workspace    $base00 $base00 $base05
+    active_workspace    $base05 $base00 $base00
     inactive_workspace  $base00 $base00 $base01
     urgent_workspace    $base08 $base08 $base00
     binding_mode        $base00 $base0A $base00
