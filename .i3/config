@@ -6,22 +6,22 @@ set $mod Mod4
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #3c221b
-set $base01 #59433b
-set $base02 #76635a
-set $base03 #94837a
-set $base04 #b1a499
-set $base05 #cec4b8
-set $base06 #d5cdc3
-set $base07 #dcd5cd
-set $base08 #eb230a
-set $base09 #657c87
-set $base0A #6b7991
-set $base0B #bf5c2a
-set $base0C #db4c1d
-set $base0D #9e6d55
-set $base0E #9c8b7c
-set $base0F #d94417
+set $base00 #4d2525
+set $base01 #775959
+set $base02 #a28e8e
+set $base03 #ccc3c3
+set $base04 #f6f7f7
+set $base05 #ffffff
+set $base06 #ffffff
+set $base07 #ffffff
+set $base08 #976e6e
+set $base09 #f10707
+set $base0A #c25656
+set $base0B #ef1313
+set $base0C #a96565
+set $base0D #d14949
+set $base0E #787878
+set $base0F #ed1b1b
 # End flavours - COLORS
 
 default_border pixel 1
@@ -29,7 +29,7 @@ default_floating_border normal
 
 hide_edge_borders none
 
-font xft:GoMono Nerd Font Mono 11
+font xft:GoMono Nerd Font Mono 8
 
 floating_modifier $mod
 
@@ -187,11 +187,10 @@ exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 exec --no-startup-id $HOME/.bin/videowall -a $HOME/.wallpaper.mp4; sleep 1; picom -b
 exec --no-startup-id nm-applet
-exec --no-startup-id xfce4-power-manager
-exec --no-startup-id pamac-tray
+#exec --no-startup-id pamac-tray
 exec --no-startup-id clipit
-exec_always --no-startup-id ff-theme-util
-exec_always --no-startup-id fix_xcursor
+#exec_always --no-startup-id ff-theme-util
+#exec_always --no-startup-id fix_xcursor
 exec --no-startup-id setxkbmap -option compose:ralt
 exec --no-startup-id xinput set-prop "MSFT0001:00 06CB:CE44 Touchpad" 312 0
 exec volumeicon
@@ -236,7 +235,7 @@ bar {
 	status_command i3blocks
 	position bottom
 
-  tray_output DP-2
+  tray_output DVI-I-1-1
 #	tray_output eDP1
 
 	bindsym button4 nop
