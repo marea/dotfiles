@@ -44,7 +44,7 @@ rewrite = true
 #hook = "xsettingsd"
 
 [[item]]
-file = "~/.config/nvim/lua/core/plugin_config/lualine.lua"
-template = "lualine"
-start = "-- Start flavours"
-end = "-- End flavours"
+file = "~/.config/Vieb/colors/custom.css"
+template = "vieb"
+start = "/* Start Flavours */"
+end = "/* End Flavours */"

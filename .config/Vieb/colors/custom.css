@@ -1,0 +1,13 @@
+#app {display: grid;grid-template: "navbar tabbar" 2em "main main" auto;}
+#navbar, #tabs {width: 50vw}
+#page-container {grid-area: main;}
+
+:root {
+    /* Start Flavours */
+  --bg: #4d2525;
+  --fg: #ffffff;
+  --tab-background: #4d2525;
+  --tab-suspended: #4d2525;
+  --visible-tab: #775959;
+    /* End Flavours */
+}
