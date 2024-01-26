@@ -41,8 +41,8 @@ bindsym $mod+p exec --no-startup-id passmenu -c -l 10
 bindsym $mod+Ctrl+m exec pavucontrol
 
 bindsym $mod+Ctrl+b exec kitty -e 'bmenu'
-bindsym $mod+F2 exec chromium
-bindsym $mod+F3 exec pcmanfm
+#bindsym $mod+F2 exec chromium
+#bindsym $mod+F3 exec pcmanfm
 bindsym $mod+t exec --no-startup-id pkill picom
 bindsym $mod+Ctrl+t exec --no-startup-id picom -b
 bindsym Print exec --no-startup-id i3-scrot
@@ -185,10 +185,10 @@ bindsym $mod+9 exec --no-startup-id blurlock
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # exec --no-startup-id nitrogen --restore; sleep 1; picom -b
-exec --no-startup-id $HOME/.bin/videowall -a $HOME/.wallpaper.mp4; sleep 1; picom -b
+# exec --no-startup-id $HOME/.bin/videowall -a $HOME/.wallpaper.mp4; sleep 1; picom -b
 exec --no-startup-id nm-applet
 #exec --no-startup-id pamac-tray
-exec --no-startup-id clipit
+#exec --no-startup-id clipit
 #exec_always --no-startup-id ff-theme-util
 #exec_always --no-startup-id fix_xcursor
 exec --no-startup-id setxkbmap -option compose:ralt
@@ -196,7 +196,7 @@ exec --no-startup-id xinput set-prop "MSFT0001:00 06CB:CE44 Touchpad" 312 0
 exec volumeicon
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id unclutter --timeout 3 --fork
-exec --no-starupt-id xscreensaver
+#exec --no-starupt-id xscreensaver
 
 # Color palette used for the terminal ( ~/.Xresources file )
 # Colors are gathered based on the documentation:
