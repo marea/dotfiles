@@ -42,9 +42,3 @@ template = "gtk-flatcolor"
 subtemplate = "gtk-3"
 rewrite = true
 #hook = "xsettingsd"
-
-[[item]]
-file = "~/.config/Vieb/colors/custom.css"
-template = "vieb"
-start = "/* Start Flavours */"
-end = "/* End Flavours */"
