@@ -46,3 +46,9 @@ rewrite = true
 [[item]]
 file = "~/.config/dunst/dunstrc"
 template = "dunst"
+
+[[item]]
+file = "/tmp/settings.json"
+template = "vivaldi"
+rewrite = true
+hook = "7z a -tzip ~/vivaldi-theme.zip -w /tmp/settings.json"
