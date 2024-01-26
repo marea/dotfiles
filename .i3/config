@@ -6,22 +6,22 @@ set $mod Mod4
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #32231f
-set $base01 #504441
-set $base02 #6f6664
-set $base03 #8e8886
-set $base04 #aca9a9
-set $base05 #cbcbcb
-set $base06 #d3d3d3
-set $base07 #dadada
-set $base08 #4c8181
-set $base09 #757979
-set $base0A #797973
-set $base0B #767973
-set $base0C #787878
-set $base0D #897563
-set $base0E #787878
-set $base0F #787878
+set $base00 #20272b
+set $base01 #42494c
+set $base02 #646a6c
+set $base03 #868c8d
+set $base04 #a8adad
+set $base05 #cbcfce
+set $base06 #d2d6d5
+set $base07 #dadddc
+set $base08 #ab7370
+set $base09 #ab9c5b
+set $base0A #677b87
+set $base0B #74797f
+set $base0C #6f788e
+set $base0D #7d7779
+set $base0E #6d8eae
+set $base0F #687b86
 # End flavours - COLORS
 
 default_border pixel 1
@@ -183,6 +183,7 @@ mode "resize" {
 bindsym $mod+9 exec --no-startup-id blurlock
 
 # Autostart applications
+exec --no-startup-id /usr/bin/video-wallpaper.sh --start $HOME/.wallpaper.mp4
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 # exec --no-startup-id nitrogen --restore; sleep 1; picom -b
 # exec --no-startup-id $HOME/.bin/videowall -a $HOME/.wallpaper.mp4; sleep 1; picom -b

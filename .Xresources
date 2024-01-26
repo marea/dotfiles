@@ -3,22 +3,22 @@
 ! Scheme author: Flavours
 ! Template author: Tinted Theming (https://github.com/tinted-theming)
 
-#define base00 #32231f
-#define base01 #504441
-#define base02 #6f6664
-#define base03 #8e8886
-#define base04 #aca9a9
-#define base05 #cbcbcb
-#define base06 #d3d3d3
-#define base07 #dadada
-#define base08 #4c8181
-#define base09 #757979
-#define base0A #797973
-#define base0B #767973
-#define base0C #787878
-#define base0D #897563
-#define base0E #787878
-#define base0F #787878
+#define base00 #20272b
+#define base01 #42494c
+#define base02 #646a6c
+#define base03 #868c8d
+#define base04 #a8adad
+#define base05 #cbcfce
+#define base06 #d2d6d5
+#define base07 #dadddc
+#define base08 #ab7370
+#define base09 #ab9c5b
+#define base0A #677b87
+#define base0B #74797f
+#define base0C #6f788e
+#define base0D #7d7779
+#define base0E #6d8eae
+#define base0F #687b86
 
 *foreground:   base05
 #ifdef background_opacity
