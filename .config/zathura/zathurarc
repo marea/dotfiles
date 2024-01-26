@@ -1,0 +1,35 @@
+set recolor
+# Start flavours
+# Base16 Generated
+# Author: Flavours
+
+set default-bg                  "#32231f"
+set default-fg                  "#504441"
+
+set statusbar-fg                "#aca9a9"
+set statusbar-bg                "#6f6664"
+
+set inputbar-bg                 "#32231f"
+set inputbar-fg                 "#dadada"
+
+set notification-bg             "#32231f"
+set notification-fg             "#dadada"
+
+set notification-error-bg       "#32231f"
+set notification-error-fg       "#4c8181"
+
+set notification-warning-bg     "#32231f"
+set notification-warning-fg     "#4c8181"
+
+set highlight-color             "#797973"
+set highlight-active-color      "#897563"
+
+set completion-bg               "#504441"
+set completion-fg               "#897563"
+
+set completion-highlight-fg     "#dadada"
+set completion-highlight-bg     "#897563"
+
+set recolor-lightcolor          "#32231f"
+set recolor-darkcolor           "#d3d3d3"
+# End flavours
