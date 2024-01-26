@@ -42,3 +42,7 @@ template = "gtk-flatcolor"
 subtemplate = "gtk-3"
 rewrite = true
 #hook = "xsettingsd"
+
+[[item]]
+file = "~/.config/dunst/dunstrc"
+template = "dunst"
