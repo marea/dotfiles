@@ -6,22 +6,22 @@ set $mod Mod4
 #
 # You can use these variables anywhere in the i3 configuration file.
 
-set $base00 #4d2525
-set $base01 #775959
-set $base02 #a28e8e
-set $base03 #ccc3c3
-set $base04 #f6f7f7
-set $base05 #ffffff
-set $base06 #ffffff
-set $base07 #ffffff
-set $base08 #976e6e
-set $base09 #f10707
-set $base0A #c25656
-set $base0B #ef1313
-set $base0C #a96565
-set $base0D #d14949
+set $base00 #32231f
+set $base01 #504441
+set $base02 #6f6664
+set $base03 #8e8886
+set $base04 #aca9a9
+set $base05 #cbcbcb
+set $base06 #d3d3d3
+set $base07 #dadada
+set $base08 #4c8181
+set $base09 #757979
+set $base0A #797973
+set $base0B #767973
+set $base0C #787878
+set $base0D #897563
 set $base0E #787878
-set $base0F #ed1b1b
+set $base0F #787878
 # End flavours - COLORS
 
 default_border pixel 1
