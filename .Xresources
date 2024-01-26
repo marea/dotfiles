@@ -1,0 +1,67 @@
+! Start flavours
+! Base16 Generated
+! Scheme author: Flavours
+! Template author: Tinted Theming (https://github.com/tinted-theming)
+
+#define base00 #32231f
+#define base01 #504441
+#define base02 #6f6664
+#define base03 #8e8886
+#define base04 #aca9a9
+#define base05 #cbcbcb
+#define base06 #d3d3d3
+#define base07 #dadada
+#define base08 #4c8181
+#define base09 #757979
+#define base0A #797973
+#define base0B #767973
+#define base0C #787878
+#define base0D #897563
+#define base0E #787878
+#define base0F #787878
+
+*foreground:   base05
+#ifdef background_opacity
+*background:   [background_opacity]base00
+#else
+*background:   base00
+#endif
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
+! End flavours
+
+dwm.normbgcolor: base00
+dwm.normbordercolor: base00
+dwm.normfgcolor: base06
+dwm.selbgcolor: base02
+dwm.selbordercolor: base02
+dwm.selfgcolor: base06
+dwm.borderpx: 5
+!dwm.snap:
+dwm.showbar: 1
+dwm.nmaster: 1
+dwm.resizehints: 0
+dwm.mfact: 0.55
+
+dmenu.font: GoMono Nerd Font:size=12
+dmenu.background: base00
+dmenu.foreground: base07
+dmenu.selbackground: base02
+dmenu.selforeground: base00
