@@ -1,0 +1,59 @@
+# PATH
+typeset -U PATH path
+path=(
+  "$HOME/.local/bin"
+  "$HOME/.bin"
+  "$path[@]"
+)
+export PATH
+
+# Vars
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
+export EDITOR="vim"
+export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+export FZF_DEFAULT_COMMAND='fd --type file --color=always'
+export FZF_DEFAULT_OPTS="--ansi"
+export GOPATH="$HOME/.golang"
+export LESS="--RAW-CONTROL-CHARS"
+export MANPAGER='less -s -M +Gg'
+export HISTFILE=~/.zsh_history
+export HISTSIZE=100000
+export SAVEHIST=100000
+
+# Options
+setopt HIST_SAVE_NO_DUPS
+setopt INC_APPEND_HISTORY
+setopt autocd
+
+autoload -U compinit; compinit
+
+# Aliases
+alias q='exit'
+alias cat='bat'
+alias ls='exa'
+alias cd='z'
+
+# FZF
+source <(fzf --zsh)
+
+# Yazi
+function y() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")" cwd
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(command cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		builtin cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+
+# Zoxide
+eval "$(zoxide init zsh)"
+
+# Starship
+eval "$(starship init zsh)"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+eval `keychain -q --eval expresses express_vps github_ed25519`
