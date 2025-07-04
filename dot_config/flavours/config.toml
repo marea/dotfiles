@@ -12,3 +12,10 @@ file = "~/.config/ghostty/themes/generated"
 template = "ghostty"
 start = "# Start flavours"
 end = "# End flavours"
+
+[[item]]
+file = "~/.config/rofi/theme.rasi"
+template="rofi"
+subtemplate="colors"
+start = "// Start flavours"
+end = "// End flavours"
