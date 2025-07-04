@@ -3,19 +3,22 @@ shell = "bash -c '{}'"
 [[item]]
 file = "~/.Xresources"
 template = "xresources"
-start= "! Start flavours"
+start = "! Start flavours"
 end = "! End flavours"
 hook = "xrdb ~/.Xresources"
+rewrite = true
 
 [[item]]
 file = "~/.config/ghostty/themes/generated"
 template = "ghostty"
 start = "# Start flavours"
 end = "# End flavours"
+rewrite = true
 
 [[item]]
 file = "~/.config/rofi/theme.rasi"
-template="rofi"
-subtemplate="colors"
+template = "rofi"
+subtemplate = "colors"
 start = "// Start flavours"
 end = "// End flavours"
+rewrite = true
