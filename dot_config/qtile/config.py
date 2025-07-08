@@ -16,6 +16,7 @@ fg_alt = xrcat.getResource("*color10")
 bg = xrcat.getResource("*background")
 
 keys = [
+    Key([mod], "d", lazy.spawn("dmenu-randr")),
     Key([mod], "space", lazy.next_screen(), desc="Move focus to other screen"),
     Key([mod], "h", lazy.layout.left(), desc="Move focus to left"),
     Key([mod], "l", lazy.layout.right(), desc="Move focus to right"),
@@ -109,7 +110,7 @@ layouts = [
 ]
 
 widget_defaults = dict(
-    font="JetBrains Mono",
+    font="JetBrainsMono Nerd Font Propo",
     fontsize=12,
     padding=3,
 )
