@@ -2,3 +2,4 @@
 xrdb ~/.Xresources
 ~/.fehbg
 picom -b &
+setxkbmap -option compose:ralt
