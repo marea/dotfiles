@@ -6,6 +6,7 @@ from libqtile.config import Click, Drag, Group, Key, Match, Screen
 from libqtile.lazy import lazy
 from libqtile.utils import guess_terminal
 from xrcat import xrcat
+from sticky import *
 
 xrcat.updateResources()
 mod = "mod4"
@@ -70,6 +71,7 @@ keys = [
         lazy.spawn("rofi -show run"),
         desc="Spawn a command using a prompt widget",
     ),
+    Key([mod, "shift"], "s", toggle_sticky_windows()),
 ]
 
 groups = []
