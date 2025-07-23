@@ -16,6 +16,15 @@ fg = xrcat.getResource("*color9")
 fg_alt = xrcat.getResource("*color10")
 bg = xrcat.getResource("*background")
 
+
+def focus_next(qtile):
+    group = qtile.current_screen.group
+    group.next_window()
+    w = qtile.current_window
+    if w.floating:
+        w.bring_to_front()
+
+
 keys = [
     Key([mod], "d", lazy.spawn("dmenu-randr")),
     Key([mod], "space", lazy.next_screen(), desc="Move focus to other screen"),
@@ -48,7 +57,8 @@ keys = [
         desc="Toggle between split and unsplit sides of stack",
     ),
     Key([mod], "Return", lazy.spawn(terminal), desc="Launch terminal"),
-    Key([mod], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
+    Key([mod], "Tab", lazy.function(focus_next), desc="Focus next window"),
+    Key([mod, "shift"], "Tab", lazy.next_layout(), desc="Toggle between layouts"),
     Key([mod, "shift"], "q", lazy.window.kill(), desc="Kill focused window"),
     Key(
         [mod],
