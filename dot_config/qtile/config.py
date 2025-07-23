@@ -231,6 +231,7 @@ floating_layout = layout.Floating(
         Match(wm_class="ssh-askpass"),
         Match(title="branchdialog"),
         Match(title="pinentry"),
+        Match(wm_class="Godot"),
     ]
 )
 auto_fullscreen = True
