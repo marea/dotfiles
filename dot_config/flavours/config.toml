@@ -22,3 +22,11 @@ subtemplate = "colors"
 start = "// Start flavours"
 end = "// End flavours"
 rewrite = true
+
+[[item]]
+file = "~/.config/qutebrowser/config.py"
+template = "qutebrowser"
+subtemplate = "minimal"
+start = "# Start flavours"
+end = "# End flavours"
+rewrite = true
