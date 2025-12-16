@@ -1,28 +1,25 @@
-config.load_autoconfig()
-
-# Start flavours
 # base16-qutebrowser (https://github.com/theova/base16-qutebrowser)
 # Scheme name: Generated
 # Scheme author: Flavours
 # Template author: theova and Daniel Mulford
 # Commentary: Tinted Theming: (https://github.com/tinted-theming)
 
-base00 = "#4a232a"
-base01 = "#63464c"
-base02 = "#7c686f"
-base03 = "#958b91"
-base04 = "#adadb4"
-base05 = "#c6d0d7"
-base06 = "#cfd7dd"
-base07 = "#d7dee3"
-base08 = "#ad58ad"
-base09 = "#d93872"
-base0A = "#498552"
-base0B = "#a261a2"
-base0C = "#ac4bd8"
-base0D = "#e22184"
-base0E = "#e0287c"
-base0F = "#2b77da"
+base00 = "#222344"
+base01 = "#40435f"
+base02 = "#5d647a"
+base03 = "#7a8495"
+base04 = "#98a4b0"
+base05 = "#b5c5cb"
+base06 = "#c0cdd3"
+base07 = "#cbd6db"
+base08 = "#8e6e90"
+base09 = "#437f9b"
+base0A = "#1c8d93"
+base0B = "#59c1e1"
+base0C = "#9d62ab"
+base0D = "#a059ca"
+base0E = "#cf4188"
+base0F = "#bf4f95"
 
 # set qutebrowser colors
 
@@ -82,12 +79,12 @@ c.colors.contextmenu.disabled.fg = base04
 c.colors.contextmenu.menu.bg = base00
 
 # Foreground color of the context menu. If set to null, the Qt default is used.
-c.colors.contextmenu.menu.fg = base05
+c.colors.contextmenu.menu.fg =  base05
 
 # Background color of the context menu’s selected item. If set to null, the Qt default is used.
 c.colors.contextmenu.selected.bg = base02
 
-# Foreground color of the context menu’s selected item. If set to null, the Qt default is used.
+#Foreground color of the context menu’s selected item. If set to null, the Qt default is used.
 c.colors.contextmenu.selected.fg = base05
 
 # Background color for the download bar.
@@ -303,8 +300,3 @@ c.colors.tabs.selected.even.bg = base02
 # Background color for webpages if unset (or empty to use the theme's
 # color).
 c.colors.webpage.bg = base00
-# End flavours
-
-config.bind(",v", "hint links spawn umpv {hint-url}")
-config.bind(",d", "set -u {url:host} colors.webpage.darkmode.enabled true")
-config.bind(",D", "set -u {url:host} colors.webpage.darkmode.enabled false")

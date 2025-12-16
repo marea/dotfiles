@@ -4,6 +4,9 @@ path=(
   "$HOME/.local/bin"
   "$HOME/.bin"
   "$HOME/.cargo/bin"
+  "$HOME/.golang/bin/"
+  "$HOME/.dotnet/tools/"
+  "$HOME/.bun/bin"
   "$path[@]"
 )
 export PATH
@@ -57,4 +60,4 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-eval `keychain -q --eval expresses express_vps github_ed25519`
+eval `keychain -q --eval github_ed25519 express_vps`
