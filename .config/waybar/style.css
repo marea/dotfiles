@@ -1,0 +1,45 @@
+@import "./colors.css";
+
+* {
+  border: none;
+  border-radius: 0;
+  font-family: monospace;
+  font-size: 12px;
+  min-height: 0;
+}
+
+window#waybar {
+  background: transparent;
+}
+
+window > box {
+  margin: 10px;
+}
+
+tooltip {
+  background: @base00;
+}
+
+.module {
+  padding: 0 10px;
+  color: @base05;
+}
+
+.modules-center, .modules-left, .modules-right {
+  background: @base00;
+  border-radius: 9999px;
+}
+
+#workspaces {
+  padding: 0px;
+}
+
+#workspaces button {
+  color: @base05;
+}
+
+#workspaces button.active {
+  background: @base05;
+  color: @base00;
+  border-radius: 9999px;
+}

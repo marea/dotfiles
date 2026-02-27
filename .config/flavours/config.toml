@@ -1,0 +1,32 @@
+[[items]]
+file = "~/.config/hypr/theme.conf"
+template = "hypr"
+
+[[items]]
+file = "~/.config/hypr/hyprlock.conf"
+template = "hypr"
+subtemplate = "lock"
+
+[[items]]
+file = "~/.config/waybar/colors.css"
+template = "waybar"
+rewrite = true
+
+[[items]]
+file = "~/.config/kitty/theme.conf"
+template = "kitty"
+subtemplate = "default"
+rewrite = true
+hook = "pkill -SIGUSR1 kitty"
+
+[[items]]
+file = "~/.config/nvim/colors/custom.lua"
+template = "nvim"
+rewrite = true
+hook = "pkill -SIGUSR1 nvim"
+
+
+[[items]]
+file = "~/.config/dunst/dunstrc"
+template = "dunst"
+hook = "pkill -9 dunst"

@@ -1,0 +1,89 @@
+[global]
+    monitor = 0
+    follow = mouse
+    width = (0, 300)
+    height = (0, 300)
+    origin = top-right
+    offset = (20, 10)
+    scale = 0
+    notification_limit = 20
+    progress_bar = true
+    progress_bar_height = 10
+    progress_bar_frame_width = 1
+    progress_bar_min_width = 150
+    progress_bar_max_width = 300
+    progress_bar_corner_radius = 0
+    progress_bar_corners = all
+    icon_corner_radius = 0
+    icon_corners = all
+    indicate_hidden = yes
+    transparency = 0
+    separator_height = 2
+    padding = 8
+    horizontal_padding = 8
+    text_icon_padding = 0
+    frame_width = 3
+    frame_color = "#aaaaaa"
+    gap_size = 0
+    separator_color = frame
+    sort = yes
+    font = Monospace 8
+    line_height = 0
+    markup = full
+    format = "<b>%s</b>\n%b"
+    alignment = left
+    vertical_alignment = center
+    show_age_threshold = 60
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = false
+    show_indicators = yes
+    enable_recursive_icon_lookup = true
+    icon_theme = Adwaita
+    icon_position = left
+    min_icon_size = 32
+    max_icon_size = 128
+    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    sticky_history = yes
+    history_length = 20
+    # dmenu path.
+    dmenu = /usr/bin/wofi -S dmenu -p dunst:
+    browser = /usr/bin/xdg-open
+    always_run_script = true
+    title = Dunst
+    class = Dunst
+    corner_radius = 4
+    corners = all
+    ignore_dbusclose = false
+    force_xwayland = false
+    force_xinerama = false
+    mouse_left_click = close_current
+    mouse_middle_click = close_all
+    mouse_right_click = do_action, close_current
+
+[experimental]
+    per_monitor_dpi = false
+    pause_on_mouse_over = false
+
+
+# Start flavours
+[global]
+frame_color = "#ffffff"
+separator_color = "#ffffff"
+
+[base16_low]
+    msg_urgency = "low"
+    background = "#6b4f55"
+    foreground = "#b9adb0"
+
+[base16_normal]
+    msg_urgency = "normal"
+    background = "#927e83"
+    foreground = "#ffffff"
+
+[base16_critical]
+    msg_urgency = "critical"
+    background = "#ec1f25"
+    foreground = "#ffffff"
+# End flavours
