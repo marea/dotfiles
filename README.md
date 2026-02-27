@@ -1,0 +1,3 @@
+# Dotfiles
+
+Install with `stow .`
