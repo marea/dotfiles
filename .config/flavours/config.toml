@@ -25,8 +25,13 @@ template = "nvim"
 rewrite = true
 hook = "pkill -SIGUSR1 nvim"
 
-
 [[items]]
 file = "~/.config/dunst/dunstrc"
 template = "dunst"
 hook = "pkill -9 dunst"
+
+[[item]]
+file = "~/.config/rofi/theme.rasi"
+template = "rofi"
+subtemplate = "colors"
+rewrite = true
