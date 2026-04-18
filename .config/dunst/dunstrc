@@ -74,16 +74,16 @@ separator_color = "#ffffff"
 
 [base16_low]
     msg_urgency = "low"
-    background = "#6b4f55"
-    foreground = "#b9adb0"
+    background = "#6a4d53"
+    foreground = "#b5a7aa"
 
 [base16_normal]
     msg_urgency = "normal"
-    background = "#927e83"
+    background = "#8f7a7f"
     foreground = "#ffffff"
 
 [base16_critical]
     msg_urgency = "critical"
-    background = "#ec1f25"
+    background = "#c84d72"
     foreground = "#ffffff"
 # End flavours
