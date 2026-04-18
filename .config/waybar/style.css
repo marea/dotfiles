@@ -9,11 +9,7 @@
 }
 
 window#waybar {
-  background: transparent;
-}
-
-window > box {
-  margin: 10px;
+  background: @base00;
 }
 
 tooltip {
@@ -25,9 +21,10 @@ tooltip {
   color: @base05;
 }
 
-.modules-center, .modules-left, .modules-right {
+.modules-center,
+.modules-left,
+.modules-right {
   background: @base00;
-  border-radius: 9999px;
 }
 
 #workspaces {
@@ -41,5 +38,9 @@ tooltip {
 #workspaces button.active {
   background: @base05;
   color: @base00;
-  border-radius: 9999px;
+}
+
+#workspaces button:hover {
+  background: @base02;
+  color: @base00;
 }
