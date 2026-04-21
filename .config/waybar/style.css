@@ -44,3 +44,8 @@ tooltip {
   background: @base02;
   color: @base00;
 }
+
+#submap {
+  background: @base02;
+  color: @base00;
+}

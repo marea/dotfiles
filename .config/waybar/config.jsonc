@@ -6,7 +6,7 @@
   "height": 24,
   "width": -1,
   "spacing": 0,
-  "modules-left": ["cpu", "memory", "temperature"],
+  "modules-left": ["hyprland/submap", "cpu", "memory", "temperature"],
   "modules-center": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
     "idle_inhibitor",
