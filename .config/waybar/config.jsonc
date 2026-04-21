@@ -76,6 +76,7 @@
     "format-disconnected": "󰤮",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
     "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
+    "on-click-right": "rofi -show wifi -iface wlp2s0",
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -93,7 +94,7 @@
       "car": "",
       "default": ["󰕿", "󰖀", "󰕾"],
     },
-    "on-click": "pavucontrol",
+    "on-click-right": "rofi -show sound -modi sound:rofi-sound.sh",
     "tooltip-format": "{volume}% {desc}",
   },
   "bluetooth": {
@@ -101,7 +102,7 @@
     "format-disabled": "󰂲",
     "format-off": "󰂲 ",
     "format-connected": "󰂱",
-    "on-click": "dmenu-bluetooth",
+    "on-click-right": "dmenu-bluetooth",
     "tooltip-format": "󰂯 {status}",
     "tooltip-format-disabled": "󰂲 {status}",
     "tooltip-format-off": "󰂲  {status}",
