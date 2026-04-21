@@ -22,6 +22,7 @@ export MANPAGER='less -s -M +Gg'
 export HISTFILE=~/.zsh_history
 export HISTSIZE=100000
 export SAVEHIST=100000
+export DMENU_BLUETOOTH_LAUNCHER=rofi
 
 #Options
 setopt autocd

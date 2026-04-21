@@ -6,38 +6,32 @@
   "height": 24,
   "width": -1,
   "spacing": 0,
-  "modules-left": [
-    "cpu",
-    "memory",
-    "temperature"
-  ],
-  "modules-center": [
-    "hyprland/workspaces",
-    "hyprland/window"
-  ],
+  "modules-left": ["cpu", "memory", "temperature"],
+  "modules-center": ["hyprland/workspaces", "hyprland/window"],
   "modules-right": [
     "idle_inhibitor",
     "pulseaudio",
     "network",
+    "bluetooth",
     "battery",
     "tray",
-    "clock"
+    "clock",
   ],
   "hyprland/window": {
-    "separate-outputs": true
+    "separate-outputs": true,
   },
   "idle_inhibitor": {
     "format": "{icon}",
     "format-icons": {
       "activated": " ",
-      "deactivated": " "
-    }
+      "deactivated": " ",
+    },
   },
   "tray": {
     "spacing": 10,
     "icons": {
-      "blueman": "bluetooth"
-    }
+      "blueman": "bluetooth",
+    },
   },
   "clock": {
     "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
@@ -45,44 +39,34 @@
     "format-alt": " {:%Y-%m-%d %H:%M}",
     "calendar": {
       "format": {
-        "today": "<span><b><u>{}</u></b></span>"
-      }
-    }
+        "today": "<span><b><u>{}</u></b></span>",
+      },
+    },
   },
   "cpu": {
     "format": "{usage}% ",
-    "tooltip": true
+    "tooltip": true,
   },
   "memory": {
-    "format": "{}% "
+    "format": "{}% ",
   },
   "temperature": {
     "hwmon-path": "/sys/class/hwmon/hwmon4/temp1_input",
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
-    "format-icons": [
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", ""],
   },
   "battery": {
     "states": {
       "warning": 30,
-      "critical": 15
+      "critical": 15,
     },
     "format": "{icon}",
     "format-full": "{icon}",
     "format-charging": "󱐋",
     "format-plugged": "",
     "format-alt": "{icon}",
-    "format-icons": [
-      "",
-      "",
-      "",
-      "",
-      ""
-    ]
+    "format-icons": ["", "", "", "", ""],
   },
   "network": {
     "format-wifi": "{icon}",
@@ -91,13 +75,7 @@
     "format-linked": "{ifname} (No IP) 󰈀",
     "format-disconnected": "󰤮",
     "format-alt": "{ifname}: {ipaddr}/{cidr}",
-    "format-icons": [
-      "󰤯",
-      "󰤟",
-      "󰤢",
-      "󰤥",
-      "󰤨"
-    ]
+    "format-icons": ["󰤯", "󰤟", "󰤢", "󰤥", "󰤨"],
   },
   "pulseaudio": {
     "format": "{icon}",
@@ -113,13 +91,20 @@
       "phone": "",
       "portable": "",
       "car": "",
-      "default": [
-        "󰕿",
-        "󰖀",
-        "󰕾"
-      ]
+      "default": ["󰕿", "󰖀", "󰕾"],
     },
     "on-click": "pavucontrol",
-    "tooltip-format": "{volume}% {desc}"
-  }
+    "tooltip-format": "{volume}% {desc}",
+  },
+  "bluetooth": {
+    "format": "󰂯",
+    "format-disabled": "󰂲",
+    "format-off": "󰂲 ",
+    "format-connected": "󰂱",
+    "on-click": "dmenu-bluetooth",
+    "tooltip-format": "󰂯 {status}",
+    "tooltip-format-disabled": "󰂲 {status}",
+    "tooltip-format-off": "󰂲  {status}",
+    "tooltip-format-connected": "󰂯 {device_alias}",
+  },
 }
