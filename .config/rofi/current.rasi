@@ -41,7 +41,7 @@ spacerbox {
 }
 
 imagebox {
-  background-image: url("./image.jpg", width);
+  background-image: url("~/.images/rofi.jpg", width);
   background-repeat: none;
 }
 
