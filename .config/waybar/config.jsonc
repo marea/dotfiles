@@ -17,6 +17,20 @@
     "tray",
     "clock",
   ],
+  "hyprland/workspaces": {
+    "format": "{icon}",
+    "format-icons": {
+      "1": "󰖟",
+      "2": "",
+      "3": "󰆍",
+      "4": "",
+      "5": "",
+      "6": "󰭹",
+      "7": "",
+      "8": "",
+      "9": "",
+    },
+  },
   "hyprland/window": {
     "separate-outputs": true,
   },
