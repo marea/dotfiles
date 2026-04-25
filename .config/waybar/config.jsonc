@@ -32,6 +32,7 @@
     },
   },
   "hyprland/window": {
+    "max-length": 32,
     "separate-outputs": true,
   },
   "idle_inhibitor": {
