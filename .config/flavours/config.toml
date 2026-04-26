@@ -35,3 +35,10 @@ file = "~/.config/rofi/theme.rasi"
 template = "rofi"
 subtemplate = "colors"
 rewrite = true
+
+[[item]]
+file = "~/.Xresources.theme"
+template = "xresources"
+subtemplate = "base24"
+rewrite = true
+hook = "xrdb ~/.Xresources"
