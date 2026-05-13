@@ -1,6 +1,8 @@
 [[items]]
-file = "~/.config/hypr/theme.conf"
+file = "~/.config/hypr/hyprland.lua"
 template = "hypr"
+start = "-- Start flavours"
+end = "-- End flavours"
 
 [[items]]
 file = "~/.config/hypr/hyprlock.conf"
