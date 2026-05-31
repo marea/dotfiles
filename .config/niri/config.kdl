@@ -182,7 +182,7 @@ window-rule {
 }
 
 window-rule {
-	match title="^Picture in picture$"
+	match title="^Picture in picture$|^Picture-in-Picture$"
 	open-floating true
   default-floating-position x=10 y=10 relative-to="bottom-right"
   default-column-width { fixed 480; }
@@ -216,7 +216,8 @@ binds {
   Mod+Shift+C { spawn-sh "qs -c noctalia-shell ipc call calendar toggle"; }
   Mod+Shift+M { spawn-sh "qs -c noctalia-shell ipc call systemMonitor toggle"; }
   Mod+Shift+W { spawn-sh "qs -c noctalia-shell ipc call wallpaper toggle"; }
-  Mod+G { spawn "niri-float-sticky" "-ipc" "toggle_sticky"; }
+  // Mod+G { spawn "niri-float-sticky" "-ipc" "toggle_sticky"; }
+  Mod+P { spawn-sh "passmenu"; }
 
   XF86AudioRaiseVolume { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "increase"; }
   XF86AudioLowerVolume { spawn "qs" "-c" "noctalia-shell" "ipc" "call" "volume" "decrease"; }

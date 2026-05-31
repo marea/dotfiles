@@ -57,3 +57,16 @@ eval "$(starship init zsh)"
 
 # Keychain
 eval `keychain -q --eval github_ed25519 express_vps`
+
+# pnpm
+export PNPM_HOME="/home/marea/.local/share/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
+export PATH="/home/marea/.config/herd-lite/bin:$PATH"
+export PHP_INI_SCAN_DIR="/home/marea/.config/herd-lite/bin:$PHP_INI_SCAN_DIR"
+
+# Turso
+export PATH="$PATH:/home/marea/.turso"
