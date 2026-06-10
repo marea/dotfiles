@@ -693,6 +693,10 @@
             {
                 "enabled": true,
                 "id": "zenBrowser"
+            },
+            {
+                "enabled": true,
+                "id": "zed"
             }
         ],
         "enableUserTheming": true
